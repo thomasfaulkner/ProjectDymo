@@ -16,12 +16,8 @@ class PlainTableViewCell: UITableViewCell {
         // Configure cell background color
         backgroundColor = ThemeColorKit.tableSecondaryBackgroundColor()
         
-        // Configure cell tint color (color overlaid on selection)
-        tintColor = ThemeColorKit.orangeAccent()
-        
-        // Configure background view for selected state
-        let selectedStateBackgroundView = UIView()
-        selectedBackgroundView = selectedStateBackgroundView
+        // Configure translucent overlay that is displayed on cell selection
+        selectedBackgroundView = UniversalSelectionStateBackgroundView()
     }
     
     required init?(coder: NSCoder) {

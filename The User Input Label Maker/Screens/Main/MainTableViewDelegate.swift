@@ -81,7 +81,7 @@ class MainTableViewDelegate: NSObject, UniversalTableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         #warning("Still needs to be configured.")
-        tableView.deselectRow(at: indexPath, animated: false) // DELETE THIS
+        tableView.deselectRow(at: indexPath, animated: true) // DELETE THIS
         return
     }
     
