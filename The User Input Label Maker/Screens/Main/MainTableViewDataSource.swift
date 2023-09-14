@@ -9,11 +9,18 @@ import UIKit
 
 class MainTableViewDataSource: NSObject, UniversalTableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        <#code#>
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        switch section {
+        case 0:
+            return 3
+        case 1:
+            return 1
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

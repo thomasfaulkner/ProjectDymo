@@ -18,13 +18,20 @@ class MainTableViewController: UITableViewController {
         title = "User Input Label Maker"
         navigationController?.navigationBar.prefersLargeTitles = false
         
-        // Configure Table View
+        // MARK: Configure Table View
         tableView.delegate = delegate
         tableView.dataSource = dataSource
         
         // Register custom cells and header/footer views
         registerCellsAndViews(forTableView: tableView)
         
+        // MARK: Configure Navigation Bar
+        if let navBar = self.navigationController?.navigationBar {
+            NavigationBarConfigurationHelpers.configureNavigationBar(navBar)
+        }
+        
+        // Configure back button text
+        NavigationBarConfigurationHelpers.configureParentBackButtonNavigationItem(navigationItem, withBackButtonText: "Label Maker")
     }
     
     func registerCellsAndViews(forTableView tableView: UITableView) {
