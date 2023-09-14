@@ -75,11 +75,14 @@ class MainTableViewDelegate: NSObject, UniversalTableViewDelegate {
     // MARK: - Configure Cell Selection
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        <#code#>
+        // All cells are selectable, so return indexPath for everything. If this changes, return nil for that indexPath.
+        return indexPath
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        #warning("Still needs to be configured.")
+        tableView.deselectRow(at: indexPath, animated: false) // DELETE THIS
+        return
     }
     
 }
