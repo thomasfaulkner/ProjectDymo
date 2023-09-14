@@ -49,6 +49,8 @@ class TextFieldTableViewCell: UITableViewCell {
             textField.topAnchor.constraint(equalTo: containerView.topAnchor),
             textField.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
+        
+        #warning("May have to configure what is and isn't an accessibility element/what responds to user interaction")
     }
     
     required init?(coder: NSCoder) {

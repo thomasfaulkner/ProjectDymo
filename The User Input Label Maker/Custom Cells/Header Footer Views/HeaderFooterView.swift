@@ -66,6 +66,10 @@ class HeaderFooterView: UITableViewHeaderFooterView {
         
         // MARK: Configure Accessibility
         
+        // Group all header/footer view elements as one accessibility element
+        #warning("Double check if this is necessary, I haven't done this before.")
+        self.shouldGroupAccessibilityChildren = true
+        
         // Accessibility traits (.header for Header and nothing for Footer) will be set individually at call site
     }
     
