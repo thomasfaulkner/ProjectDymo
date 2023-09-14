@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */; };
 		5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */; };
 		5E1FB9B12AB0CA7A00CE9458 /* UniversalTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B02AB0CA7900CE9458 /* UniversalTableViewDelegate.swift */; };
 		5E1FB9B32AB0FEC900CE9458 /* MainTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B22AB0FEC900CE9458 /* MainTableViewDelegate.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableView.swift; sourceTree = "<group>"; };
 		5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDataSource.swift; sourceTree = "<group>"; };
 		5E1FB9B02AB0CA7900CE9458 /* UniversalTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDelegate.swift; sourceTree = "<group>"; };
 		5E1FB9B22AB0FEC900CE9458 /* MainTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113C9FDA2AB377C100A4DA78 /* Universal Table View Configuration Templates */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */,
+			);
+			path = "Universal Table View Configuration Templates";
+			sourceTree = "<group>";
+		};
 		5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +123,13 @@
 			path = "Universal Table View Protocols";
 			sourceTree = "<group>";
 		};
-		5E1FB9B72AB0FFE600CE9458 /* Protocols */ = {
+		5E1FB9B72AB0FFE600CE9458 /* Protocols and Templates */ = {
 			isa = PBXGroup;
 			children = (
+				113C9FDA2AB377C100A4DA78 /* Universal Table View Configuration Templates */,
 				5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */,
 			);
-			path = Protocols;
+			path = "Protocols and Templates";
 			sourceTree = "<group>";
 		};
 		5ECEC8142A9ADBDE00535B42 = {
@@ -149,7 +160,7 @@
 				5ECEC86C2AAFAD9500535B42 /* Screens */,
 				5ECEC86D2AAFAE6300535B42 /* Custom Cells */,
 				5ECEC8692AAFABCC00535B42 /* Cell Configuration */,
-				5E1FB9B72AB0FFE600CE9458 /* Protocols */,
+				5E1FB9B72AB0FFE600CE9458 /* Protocols and Templates */,
 				5ECEC8662AAFA62E00535B42 /* Utilities */,
 				5ECEC8262A9ADBDE00535B42 /* Main.storyboard */,
 				5ECEC8292A9ADBDF00535B42 /* Assets.xcassets */,
@@ -377,6 +388,7 @@
 				5ECEC86F2AAFAEB500535B42 /* PlainTableViewCell.swift in Sources */,
 				5ECEC8712AAFAEF300535B42 /* DisclosureTableViewCell.swift in Sources */,
 				5ECEC8252A9ADBDE00535B42 /* MainTableViewController.swift in Sources */,
+				113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */,
 				5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */,
 				5E1FB9B12AB0CA7A00CE9458 /* UniversalTableViewDelegate.swift in Sources */,
 				5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */,

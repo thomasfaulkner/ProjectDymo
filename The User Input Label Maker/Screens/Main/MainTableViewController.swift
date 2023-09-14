@@ -20,26 +20,22 @@ class MainTableViewController: UITableViewController {
         
         // MARK: Configure Table View
         
-        #warning("Some of this can be split out into another function/extension")
+        // Instantiate a new table view from the universal template, then assign it to the main table view managed by this controller
+        let mainTableView = UniversalTableView()
+        tableView = mainTableView
         
-        // Set table view style to .insetGrouped
-        // .insetGroup is enabled in the storyboard.
-        
-        // Configure delegate and data source
-        tableView.delegate = delegate
-        tableView.dataSource = dataSource
+        // Configure table view delegate and data source
+        mainTableView.delegate = delegate
+        mainTableView.dataSource = dataSource
         
         // Register custom cells and header/footer views
-        registerCellsAndViews(forTableView: tableView)
+        registerCellsAndViews(forTableView: mainTableView)
         
         // Configure table view to clear selection when navigated back to
         clearsSelectionOnViewWillAppear = true
         
-        // Configure table view background and separator colors
-        tableView.backgroundColor = ThemeColorKit.tableBackgroundColor()
-        tableView.separatorColor = ThemeColorKit.tableSeparator()
-        
         // MARK: Configure Navigation Bar
+        
         if let navBar = self.navigationController?.navigationBar {
             NavigationBarConfigurationHelpers.configureNavigationBar(navBar)
         }
