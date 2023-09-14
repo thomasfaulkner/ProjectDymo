@@ -13,6 +13,7 @@ struct NavigationBarConfigurationHelpers {
     // Call this configuration on every Table View Controller.
     static func configureNavigationBar(_ navigationBar: UINavigationBar) {
         
+        // Configure navigation bar background appearance (opaque/translucent), background color,  and title text attributes
         func universalNavigationBarAppearance() -> UINavigationBarAppearance {
             let navigationBarTitleAttributes: [NSAttributedString.Key: Any] = [
                 NSAttributedString.Key.foregroundColor: ThemeColorKit.bodyTextColor(),
@@ -27,17 +28,23 @@ struct NavigationBarConfigurationHelpers {
             return appearance
         }
         
+        // Configure color used for navigation bar buttons (I think?)
         navigationBar.tintColor = ThemeColorKit.orangeAccent()
         
+        // Configure custom symbol for back indicator
         navigationBar.backIndicatorImage = SFSymbolKit.leftChevron()
         navigationBar.backIndicatorTransitionMaskImage = SFSymbolKit.leftChevron()
         
+        // Set universal navigation bar appearance described in function above to all appearances
         navigationBar.standardAppearance = universalNavigationBarAppearance()
         navigationBar.scrollEdgeAppearance = universalNavigationBarAppearance()
         navigationBar.compactAppearance = universalNavigationBarAppearance()
     }
     
-    // This configuration only needs to be called on parent Table View Controllers, as the final child branch won't have a back button title to configure.
+    // Configure back button title and title attributes (the one displayed on the second screen the first one pushes to, next to the back button, e.g. "< Settings")
+    
+    /// This configuration only needs to be called on parent Table View Controllers, as the final child branch won't have a back button title to configure.
+    
     static func configureParentBackButtonNavigationItem(_ navigationItem: UINavigationItem, withBackButtonText backButtonText: String) {
         let backButtonItem = UIBarButtonItem(title: "\(backButtonText)", style: .plain, target: self, action: nil)
         
