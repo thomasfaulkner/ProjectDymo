@@ -12,6 +12,16 @@ class PlainTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        // Configure cell background color
+        backgroundColor = ThemeColorKit.tableSecondaryBackgroundColor()
+        
+        // Configure cell tint color (color overlaid on selection)
+        tintColor = ThemeColorKit.orangeAccent()
+        
+        // Configure background view for selected state
+        let selectedStateBackgroundView = UIView()
+        selectedBackgroundView = selectedStateBackgroundView
     }
     
     required init?(coder: NSCoder) {

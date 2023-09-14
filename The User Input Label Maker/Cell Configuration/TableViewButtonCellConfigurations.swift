@@ -18,6 +18,8 @@ struct TableViewCellContentConfigurations {
         config.textProperties.font = FontKit.bodyTextMedium()
         config.textProperties.color = ThemeColorKit.bodyTextColor()
         
+        // All that's left to configure at the call site is the text content passed in from the parameter; accessibility traits and accessibility labels which are declared for the entire cell.
+        
         return config
     }
     
@@ -28,6 +30,8 @@ struct TableViewCellContentConfigurations {
         config.text = text
         config.textProperties.font = FontKit.bodyTextRegular()
         config.textProperties.color = ThemeColorKit.bodyTextColor()
+        
+        // All that's left to configure at the call site is the text content passed in from the parameter; accessibility traits and accessibility labels which are declared for the entire cell.
         
         return config
     }

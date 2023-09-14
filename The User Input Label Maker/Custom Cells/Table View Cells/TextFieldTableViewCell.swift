@@ -59,9 +59,11 @@ class TextFieldTableViewCell: UITableViewCell {
     
     // MARK: - Helper Functions
     
-    func textFromField() -> String {
+    func textFromField() -> String? {
         if let text = textField.text {
             return text
+        } else {
+            return nil
         }
     }
 }

@@ -13,7 +13,20 @@ class DisclosureTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        // This cell is exactly the same as PlainTableViewCell, except it has a disclosure indicator arrow
+        
+        // Configure disclosure indicator
         accessoryType = .disclosureIndicator
+        
+        // Configure cell background color
+        backgroundColor = ThemeColorKit.tableSecondaryBackgroundColor()
+        
+        // Configure cell tint color (color overlaid on selection)
+        tintColor = ThemeColorKit.orangeAccent()
+        
+        // Configure background view for selected state
+        let selectedStateBackgroundView = UIView()
+        selectedBackgroundView = selectedStateBackgroundView
     }
     
     required init?(coder: NSCoder) {

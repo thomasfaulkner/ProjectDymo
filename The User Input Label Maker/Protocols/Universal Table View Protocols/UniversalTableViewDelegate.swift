@@ -24,4 +24,10 @@ public protocol UniversalTableViewDelegate: NSObject, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView?
+    
+    // MARK: - Configure Selection
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 }

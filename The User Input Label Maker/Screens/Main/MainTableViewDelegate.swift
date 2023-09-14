@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 class MainTableViewDelegate: NSObject, UniversalTableViewDelegate {
+    
+    // MARK: - Configure Size
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         UITableView.automaticDimension
     }
@@ -24,6 +27,8 @@ class MainTableViewDelegate: NSObject, UniversalTableViewDelegate {
     func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
         return 53
     }
+    
+    // MARK: - Configure Header/Footer View
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // All that's left to configure in the delegate is text content, font, accessibility labels, and accessibility traits.
@@ -66,4 +71,15 @@ class MainTableViewDelegate: NSObject, UniversalTableViewDelegate {
         
         return nil
     }
+    
+    // MARK: - Configure Cell Selection
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
+    
 }

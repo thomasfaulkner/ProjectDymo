@@ -24,6 +24,40 @@ class MainTableViewDataSource: NSObject, UniversalTableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        // Use DisclosureTableViewCell to show a disclosure arrow
+        let cell = tableView.dequeueReusableCell(withIdentifier: DisclosureTableViewCell.reuseIdentifier, for: indexPath) as! DisclosureTableViewCell
+        
+        // Configure text content to be used for both text label and accessibility label
+        var textContent: String {
+            switch indexPath.section {
+            case 0: // Section 0: "CONTROL TYPE"
+                switch indexPath.row {
+                case 0:
+                    return "Button or Segmented Control"
+                case 1:
+                    return "Slider, Switch, or Stepper"
+                case 2:
+                    return "Text Field"
+                default:
+                    return ""
+                }
+            case 1: // Section 1: "LEARN"
+                return "User Input Label Tips"
+            default:
+                return ""
+            }
+        }
+        
+        // Configure cell content
+        cell.contentConfiguration = TableViewCellContentConfigurations.basicButtonCell(withText: textContent)
+        
+        // Configure accessibility label
+        cell.accessibilityLabel = textContent
+        
+        // Mark all cells as Buttons for accessibility tools
+        cell.accessibilityTraits = [.button]
+        
+        return cell
     }
 }
