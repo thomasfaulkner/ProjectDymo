@@ -5,4 +5,23 @@
 //  Created by Thomas Faulkner on 9/15/23.
 //
 
-import Foundation
+import UIKit
+
+class TextButtonTableViewController: UniversalTableViewController {
+    let dataSource = TextButtonTableViewDataSource()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "Text"
+        backButtonText = "Text"
+        
+        // MARK: Configure Table View
+        
+        // Configure table view data source
+        tableView.dataSource = dataSource
+        
+        // Register cells and header/footer views
+        CellRegistrationHelpers.registerCellsAndViews(forTableView: tableView, withCellViewTypes: [.disclosure, .headerFooterView, .textField])
+    }
+}

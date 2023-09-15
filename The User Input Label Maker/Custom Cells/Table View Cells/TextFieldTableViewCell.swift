@@ -23,7 +23,7 @@ class TextFieldTableViewCell: UITableViewCell {
         let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
         
-        field.borderStyle = .roundedRect
+        field.borderStyle = .none
         field.clearButtonMode = .whileEditing
         
         return field
@@ -33,6 +33,8 @@ class TextFieldTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        // Things left to be configured at call site: placeholder text content, accessibility user input labels. These text field cells should not need accessibility traits.
         
         // Add subviews
         contentView.addSubview(containerView)
@@ -50,7 +52,33 @@ class TextFieldTableViewCell: UITableViewCell {
             textField.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
         
+        // MARK: Configure Text
+        
+        textField.textAlignment = .natural
+        textField.font = FontKit.bodyTextRegular()
+        textField.keyboardType = .default
+        
+        textField.adjustsFontForContentSizeCategory = true
+        
+        // MARK: Configure Colors
+        
+        containerView.backgroundColor = .clear
+        
+        backgroundColor = ThemeColorKit.tableSecondaryBackgroundColor()
+        textField.backgroundColor = ThemeColorKit.tableSecondaryBackgroundColor()
+        
+        textField.textColor = ThemeColorKit.bodyTextColor()
+        
+        // MARK: Configure Accessibility
+        
         #warning("May have to configure what is and isn't an accessibility element/what responds to user interaction")
+        
+        
+        #warning("This may be the correct behavior, but I'm not sure")
+        self.shouldGroupAccessibilityChildren = true
+        
+        // Text field cells should not need accessibility traits
+        // Accessibility user input labels will be set individually at call site
     }
     
     required init?(coder: NSCoder) {
@@ -59,6 +87,7 @@ class TextFieldTableViewCell: UITableViewCell {
     
     // MARK: - Helper Functions
     
+    #warning("This may not actually be needed, I'm not sure; try and see if it works")
     func textFromField() -> String? {
         if let text = textField.text {
             return text

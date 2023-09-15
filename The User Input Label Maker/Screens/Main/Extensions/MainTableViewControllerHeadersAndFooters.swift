@@ -47,10 +47,7 @@ extension MainTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        // All that's left to configure here is text content, font, and accessibility traits.
-        
-        #warning("This is currently placeholder incase I add a footer on the main screen — can leave empty or delete (?) if one is never added.")
-        
+        // No footers on this screen
         return nil
     }
 }
