@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension MainTableViewController {
-    // MARK: Configure Header/Footer View
+    // MARK: Configure Header/Footer Views
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // All that's left to configure here is text content, font, accessibility labels, and accessibility traits.

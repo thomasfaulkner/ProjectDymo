@@ -17,6 +17,9 @@
 		113C9FF52AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FF42AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift */; };
 		113C9FF72AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FF62AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift */; };
 		113C9FF92AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FF82AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift */; };
+		113C9FFD2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FFC2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift */; };
+		113C9FFF2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FFE2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift */; };
+		113CA0012AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0002AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift */; };
 		5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */; };
 		5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */; };
 		5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */; };
@@ -68,6 +71,9 @@
 		113C9FF42AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
 		113C9FF62AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
 		113C9FF82AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113C9FFC2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113C9FFE2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113CA0002AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
 		5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDataSource.swift; sourceTree = "<group>"; };
 		5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDataSource.swift; sourceTree = "<group>"; };
 		5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The User Input Label Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +167,9 @@
 		113C9FFB2AB4BF4100A4DA78 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				113C9FFC2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift */,
+				113CA0002AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift */,
+				113C9FFE2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -439,6 +448,7 @@
 			files = (
 				113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */,
 				5ECEC8732AAFB15500535B42 /* ThemeColorKit.swift in Sources */,
+				113CA0012AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift in Sources */,
 				113C9FEB2AB394AF00A4DA78 /* CellViewType.swift in Sources */,
 				5ECEC86F2AAFAEB500535B42 /* PlainTableViewCell.swift in Sources */,
 				5ECEC8712AAFAEF300535B42 /* DisclosureTableViewCell.swift in Sources */,
@@ -446,6 +456,7 @@
 				113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */,
 				5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */,
 				5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */,
+				113C9FFF2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift in Sources */,
 				5ECEC86B2AAFAD6900535B42 /* TableViewButtonCellConfigurations.swift in Sources */,
 				113C9FE72AB388BB00A4DA78 /* UniversalTableViewController.swift in Sources */,
 				113C9FF72AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift in Sources */,
@@ -456,6 +467,7 @@
 				113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */,
 				5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */,
 				5ECEC87E2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift in Sources */,
+				113C9FFD2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift in Sources */,
 				113C9FF52AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift in Sources */,
 				5ECEC8682AAFA65B00535B42 /* FontKit.swift in Sources */,
 				113C9FE92AB390DE00A4DA78 /* CellRegistrationHelpers.swift in Sources */,

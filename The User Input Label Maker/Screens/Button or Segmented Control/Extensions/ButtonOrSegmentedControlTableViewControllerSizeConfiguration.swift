@@ -1,0 +1,33 @@
+//
+//  ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift
+//  The User Input Label Maker
+//
+//  Created by Thomas Faulkner on 9/15/23.
+//
+
+import Foundation
+import UIKit
+
+extension ButtonOrSegmentedControlTableViewController {
+    // MARK: Configure Size
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        #warning("Incomplete")
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+#warning("Incomplete")
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+#warning("Incomplete")
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+#warning("Incomplete")
+        return 0
+    }
+}
