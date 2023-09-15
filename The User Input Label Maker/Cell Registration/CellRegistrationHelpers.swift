@@ -23,6 +23,10 @@ struct CellRegistrationHelpers {
             tableView.register(TextFieldTableViewCell.self, forCellReuseIdentifier: TextFieldTableViewCell.reuseIdentifier)
         }
         
+        if cellViewTypes.contains(.multilineTextView) {
+            tableView.register(MultilineTextViewTableViewCell.self, forCellReuseIdentifier: MultilineTextViewTableViewCell.reuseIdentifier)
+        }
+        
         if cellViewTypes.contains(.headerFooterView) {
             // Register HeaderFooterView
             tableView.register(HeaderFooterView.self, forHeaderFooterViewReuseIdentifier: HeaderFooterView.reuseIdentifier)

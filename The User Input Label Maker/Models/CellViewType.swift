@@ -11,5 +11,6 @@ enum CellViewType {
     case plain
     case disclosure
     case textField
+    case multilineTextView
     case headerFooterView
 }
