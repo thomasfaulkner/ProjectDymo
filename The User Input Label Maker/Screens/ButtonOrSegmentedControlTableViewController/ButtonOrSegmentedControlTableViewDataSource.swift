@@ -7,16 +7,18 @@
 
 import UIKit
 
+#warning("This is all placeholder to get the app to build and run")
+
 class ButtonOrSegmentedControlTableViewDataSource: NSObject, UniversalTableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        <#code#>
+        return 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        return UITableViewCell()
     }
 }

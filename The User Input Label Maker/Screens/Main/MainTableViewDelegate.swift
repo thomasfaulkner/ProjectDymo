@@ -80,7 +80,7 @@ class MainTableViewDelegate: NSObject, UniversalTableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        #warning("Still needs to be configured.")
+        #warning("Still needs to be configured. Consider putting all new screen launcher functions in their own file.")
         tableView.deselectRow(at: indexPath, animated: true) // DELETE THIS
         return
     }

@@ -10,7 +10,10 @@ import UIKit
 
 struct NavigationBarConfigurationHelpers {
     
-    // Call this configuration on every Table View Controller.
+    // Configure navigation bar appearance and symbols
+    
+    /// Call this configuration on every Table View Controller.
+    
     static func configureNavigationBar(_ navigationBar: UINavigationBar) {
         
         // Configure navigation bar background appearance (opaque/translucent), background color,  and title text attributes
