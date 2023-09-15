@@ -27,6 +27,12 @@
 		113CA00D2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00C2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift */; };
 		113CA0102AB4F34100A4DA78 /* LabelsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */; };
 		113CA0132AB4FB3300A4DA78 /* LabelStorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */; };
+		113CA0162AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0152AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift */; };
+		113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */; };
+		113CA01B2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */; };
+		113CA01D2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */; };
+		113CA01F2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01E2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift */; };
+		113CA0222AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */; };
 		5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */; };
 		5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */; };
 		5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */; };
@@ -88,6 +94,12 @@
 		113CA00C2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewHeadersAndFooters.swift; sourceTree = "<group>"; };
 		113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsBundle.swift; sourceTree = "<group>"; };
 		113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStorageHelpers.swift; sourceTree = "<group>"; };
+		113CA0152AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewController.swift; sourceTree = "<group>"; };
+		113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewDataSource.swift; sourceTree = "<group>"; };
+		113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewCellSelection.swift; sourceTree = "<group>"; };
+		113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewSizeConfiguration.swift; sourceTree = "<group>"; };
+		113CA01E2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextViewTableViewCell.swift; sourceTree = "<group>"; };
 		5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDataSource.swift; sourceTree = "<group>"; };
 		5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDataSource.swift; sourceTree = "<group>"; };
 		5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The User Input Label Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +236,34 @@
 			path = "Label Configuration";
 			sourceTree = "<group>";
 		};
+		113CA0142AB51B2900A4DA78 /* Generate Labels */ = {
+			isa = PBXGroup;
+			children = (
+				113CA0152AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift */,
+				113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */,
+				113CA0192AB51B8400A4DA78 /* Extensions */,
+			);
+			path = "Generate Labels";
+			sourceTree = "<group>";
+		};
+		113CA0192AB51B8400A4DA78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */,
+				113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */,
+				113CA01E2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113CA0202AB51E9600A4DA78 /* Cell Components */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */,
+			);
+			path = "Cell Components";
+			sourceTree = "<group>";
+		};
 		5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +375,7 @@
 				5ECEC8652AAFA5F400535B42 /* Main */,
 				113C9FDF2AB3869100A4DA78 /* Button or Segmented Control */,
 				113CA0022AB4C8BD00A4DA78 /* Text Button */,
+				113CA0142AB51B2900A4DA78 /* Generate Labels */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -354,7 +395,8 @@
 				5ECEC86E2AAFAEB500535B42 /* PlainTableViewCell.swift */,
 				5ECEC8702AAFAEF300535B42 /* DisclosureTableViewCell.swift */,
 				5ECEC87B2AAFBCA800535B42 /* TextFieldTableViewCell.swift */,
-				113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */,
+				113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */,
+				113CA0202AB51E9600A4DA78 /* Cell Components */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -501,8 +543,11 @@
 			files = (
 				113CA0132AB4FB3300A4DA78 /* LabelStorageHelpers.swift in Sources */,
 				113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */,
+				113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */,
 				113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */,
+				113CA0162AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift in Sources */,
 				5ECEC8732AAFB15500535B42 /* ThemeColorKit.swift in Sources */,
+				113CA01B2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift in Sources */,
 				113CA0012AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift in Sources */,
 				113C9FEB2AB394AF00A4DA78 /* CellViewType.swift in Sources */,
 				5ECEC86F2AAFAEB500535B42 /* PlainTableViewCell.swift in Sources */,
@@ -515,6 +560,7 @@
 				113C9FFF2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift in Sources */,
 				5ECEC86B2AAFAD6900535B42 /* TableViewButtonCellConfigurations.swift in Sources */,
 				113C9FE72AB388BB00A4DA78 /* UniversalTableViewController.swift in Sources */,
+				113CA01D2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift in Sources */,
 				113C9FF72AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift in Sources */,
 				113C9FDE2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift in Sources */,
 				5ECEC87A2AAFBAD800535B42 /* HeaderFooterView.swift in Sources */,
@@ -532,6 +578,8 @@
 				113CA0062AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift in Sources */,
 				5ECEC87C2AAFBCA800535B42 /* TextFieldTableViewCell.swift in Sources */,
 				113CA0042AB4C90700A4DA78 /* TextButtonTableViewController.swift in Sources */,
+				113CA0222AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift in Sources */,
+				113CA01F2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift in Sources */,
 				5ECEC8802AAFCC3000535B42 /* SFSymbolKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

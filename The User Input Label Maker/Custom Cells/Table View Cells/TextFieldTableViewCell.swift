@@ -70,10 +70,6 @@ class TextFieldTableViewCell: UITableViewCell {
         textField.textColor = ThemeColorKit.bodyTextColor()
         
         // MARK: Configure Accessibility
-        
-        #warning("May have to configure what is and isn't an accessibility element/what responds to user interaction")
-        
-        
         #warning("This may be the correct behavior, but I'm not sure")
         self.shouldGroupAccessibilityChildren = true
         
