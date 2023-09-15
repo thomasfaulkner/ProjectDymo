@@ -10,6 +10,9 @@ import UIKit
 class TextButtonTableViewController: UniversalTableViewController {
     let dataSource = TextButtonTableViewDataSource()
     
+    // Start out with a placeholder LabelsBundle object to be written-to when "Generate Labels" is selected
+    var labelsBundle = LabelsBundle(array: [String]())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

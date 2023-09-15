@@ -20,6 +20,7 @@ struct LabelStorageHelpers {
         ///         - Finally, makeLabelsBundleFromTableView returns that new LabelsBundle object.
         
         func labelsBundleFromStringArray(_ stringArray: [String]) -> LabelsBundle {
+            print("Returning LabelsBundle(array: stringArray)")
             return LabelsBundle(array: stringArray)
         }
         
@@ -33,8 +34,10 @@ struct LabelStorageHelpers {
             
             func textFromTextFieldCell(_ cell: TextFieldTableViewCell) -> String? {
                 if let text = cell.textField.text {
+                    print("Returning text: \(text)")
                     return text
                 } else {
+                    print("Returning nil - text field did not contain text")
                     return nil
                 }
             }
@@ -48,13 +51,16 @@ struct LabelStorageHelpers {
                         stringArray.append(text)
                     }
                 } else {
+                    print("Returning nil - cell is not a TextFieldTableViewCell")
                     return nil
                 }
             }
             
             if stringArray.isEmpty == false {
+                print("Returning stringArray")
                 return stringArray
             } else {
+                print("Returning nil - string array is empty")
                 return nil
             }
         }
@@ -63,8 +69,10 @@ struct LabelStorageHelpers {
         // If stringsArray IS nil, create a new LabelsBundle object with an empty array and return that object
         
         if let stringsArray = textFromFieldsInTableView(tableView, atIndexPaths: indexPaths) {
+            print("Returning labelsBundleFromStringArray(stringsArray)")
             return labelsBundleFromStringArray(stringsArray)
         } else {
+            print("Returning new LabelsBundle with empty string array because stringArray was nil")
             return LabelsBundle(array: [String]())
         }
     }

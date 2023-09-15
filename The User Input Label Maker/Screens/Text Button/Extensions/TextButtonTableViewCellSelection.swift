@@ -28,7 +28,18 @@ extension TextButtonTableViewController {
         case 0, 1:
             return
         case 2:
-            #warning("Incomplete - add label storage function and navigation")
+            let textFieldCellIndexPaths: [IndexPath] = [
+                IndexPath(row: 0, section: 0),
+                IndexPath(row: 0, section: 1)
+            ]
+            
+            #warning("Incomplete - add navigation")
+            
+            // Get text from each text field, collect it in an array of Strings, wrap that array in a LabelsBundle object, and store that bundle as a property in this table view controller.
+            labelsBundle = LabelStorageHelpers.makeLabelsBundleFromTableView(tableView, atIndexPaths: textFieldCellIndexPaths)
+            
+            print("Array: \(labelsBundle.array)\nFormatted Array: \(labelsBundle.formattedArray)")
+            
             return
         default:
             return
