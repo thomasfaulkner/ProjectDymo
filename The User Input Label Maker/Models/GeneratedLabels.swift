@@ -13,9 +13,11 @@ struct GeneratedLabels {
     // Get-only property; strings should only be added or removed from .array
     var formattedArray: [String] {
         get {
+            // If .array is empty, return the array unchanged
             if array.isEmpty == false {
                 var newArray = [String]()
                 array.forEach { item in
+                    // Trim white space and new lines from ends of labels
                     let trimmedItem = item.trimmingCharacters(in: .whitespacesAndNewlines)
                     newArray.append(trimmedItem)
                 }
