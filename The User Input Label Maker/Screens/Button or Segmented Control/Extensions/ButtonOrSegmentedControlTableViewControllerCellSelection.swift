@@ -12,11 +12,14 @@ extension ButtonOrSegmentedControlTableViewController {
     // MARK: Configure Cell Selection
     
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-#warning("Incomplete")
-        return nil
+        // All cells are selectable, so return indexPath for everything. If this changes, return nil for that indexPath.
+        return indexPath
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Push to new TableViewControllers using show(_:, sender:)
+        
 #warning("Incomplete")
         return
     }

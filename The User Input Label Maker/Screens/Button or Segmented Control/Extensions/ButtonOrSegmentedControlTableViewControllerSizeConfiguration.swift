@@ -12,22 +12,18 @@ extension ButtonOrSegmentedControlTableViewController {
     // MARK: Configure Size
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        #warning("Incomplete")
-        return 0
+        UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-#warning("Incomplete")
-        return 0
+        return 53
     }
     
     override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-#warning("Incomplete")
-        return 0
+        UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-#warning("Incomplete")
-        return 0
+        return 53
     }
 }

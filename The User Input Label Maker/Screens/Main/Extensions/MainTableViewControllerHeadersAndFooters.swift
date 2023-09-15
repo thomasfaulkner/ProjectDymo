@@ -12,7 +12,8 @@ extension MainTableViewController {
     // MARK: Configure Header/Footer Views
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        // All that's left to configure here is text content, font, accessibility labels, and accessibility traits.
+        
+        // All that's left to configure here is text content, font, accessibility labels, and accessibility traits
         
         guard let headerFooterView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderFooterView.reuseIdentifier) as? HeaderFooterView else { return nil }
         

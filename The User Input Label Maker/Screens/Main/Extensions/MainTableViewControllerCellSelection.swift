@@ -37,6 +37,5 @@ extension MainTableViewController {
         default:
             return
         }
-        return
     }
 }
