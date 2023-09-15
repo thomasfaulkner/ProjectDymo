@@ -23,10 +23,11 @@ class UniversalTableViewController: UITableViewController {
         super.viewDidLoad()
         
         /*
-         Things that will be assigned at call site:
+         Things that will be configured at call site:
          - title
          - backButtonText
-         - Table view delegate and data source
+         - Assign table view data source
+         - Configure table view delegate
          */
         
         // MARK: Configure Navigation Bar

@@ -10,14 +10,11 @@
 		113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */; };
 		113C9FDE2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */; };
 		113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */; };
-		113C9FE32AB3873800A4DA78 /* ButtonOrSegmentedControlTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE22AB3873800A4DA78 /* ButtonOrSegmentedControlTableViewDelegate.swift */; };
 		113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE42AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift */; };
 		113C9FE72AB388BB00A4DA78 /* UniversalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE62AB388BB00A4DA78 /* UniversalTableViewController.swift */; };
 		113C9FE92AB390DE00A4DA78 /* CellRegistrationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE82AB390DE00A4DA78 /* CellRegistrationHelpers.swift */; };
 		113C9FEB2AB394AF00A4DA78 /* CellViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FEA2AB394AF00A4DA78 /* CellViewType.swift */; };
 		5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */; };
-		5E1FB9B12AB0CA7A00CE9458 /* UniversalTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B02AB0CA7900CE9458 /* UniversalTableViewDelegate.swift */; };
-		5E1FB9B32AB0FEC900CE9458 /* MainTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B22AB0FEC900CE9458 /* MainTableViewDelegate.swift */; };
 		5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */; };
 		5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */; };
 		5ECEC8232A9ADBDE00535B42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8222A9ADBDE00535B42 /* SceneDelegate.swift */; };
@@ -61,14 +58,11 @@
 		113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableView.swift; sourceTree = "<group>"; };
 		113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalSelectionStateBackgroundView.swift; sourceTree = "<group>"; };
 		113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewController.swift; sourceTree = "<group>"; };
-		113C9FE22AB3873800A4DA78 /* ButtonOrSegmentedControlTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewDelegate.swift; sourceTree = "<group>"; };
 		113C9FE42AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewDataSource.swift; sourceTree = "<group>"; };
 		113C9FE62AB388BB00A4DA78 /* UniversalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewController.swift; sourceTree = "<group>"; };
 		113C9FE82AB390DE00A4DA78 /* CellRegistrationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegistrationHelpers.swift; sourceTree = "<group>"; };
 		113C9FEA2AB394AF00A4DA78 /* CellViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewType.swift; sourceTree = "<group>"; };
 		5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDataSource.swift; sourceTree = "<group>"; };
-		5E1FB9B02AB0CA7900CE9458 /* UniversalTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDelegate.swift; sourceTree = "<group>"; };
-		5E1FB9B22AB0FEC900CE9458 /* MainTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDelegate.swift; sourceTree = "<group>"; };
 		5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDataSource.swift; sourceTree = "<group>"; };
 		5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The User Input Label Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */,
-				113C9FE22AB3873800A4DA78 /* ButtonOrSegmentedControlTableViewDelegate.swift */,
 				113C9FE42AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift */,
 			);
 			path = ButtonOrSegmentedControlTableViewController;
@@ -151,7 +144,6 @@
 		5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				5E1FB9B02AB0CA7900CE9458 /* UniversalTableViewDelegate.swift */,
 				5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */,
 			);
 			path = "Universal Table View Protocols";
@@ -227,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				5ECEC8242A9ADBDE00535B42 /* MainTableViewController.swift */,
-				5E1FB9B22AB0FEC900CE9458 /* MainTableViewDelegate.swift */,
 				5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */,
 			);
 			path = Main;
@@ -425,17 +416,14 @@
 				5ECEC8732AAFB15500535B42 /* ThemeColorKit.swift in Sources */,
 				113C9FEB2AB394AF00A4DA78 /* CellViewType.swift in Sources */,
 				5ECEC86F2AAFAEB500535B42 /* PlainTableViewCell.swift in Sources */,
-				113C9FE32AB3873800A4DA78 /* ButtonOrSegmentedControlTableViewDelegate.swift in Sources */,
 				5ECEC8712AAFAEF300535B42 /* DisclosureTableViewCell.swift in Sources */,
 				5ECEC8252A9ADBDE00535B42 /* MainTableViewController.swift in Sources */,
 				113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */,
 				5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */,
-				5E1FB9B12AB0CA7A00CE9458 /* UniversalTableViewDelegate.swift in Sources */,
 				5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */,
 				5ECEC86B2AAFAD6900535B42 /* TableViewButtonCellConfigurations.swift in Sources */,
 				113C9FE72AB388BB00A4DA78 /* UniversalTableViewController.swift in Sources */,
 				113C9FDE2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift in Sources */,
-				5E1FB9B32AB0FEC900CE9458 /* MainTableViewDelegate.swift in Sources */,
 				5ECEC87A2AAFBAD800535B42 /* HeaderFooterView.swift in Sources */,
 				5ECEC8232A9ADBDE00535B42 /* SceneDelegate.swift in Sources */,
 				113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */,
