@@ -25,7 +25,8 @@
 		113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0082AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift */; };
 		113CA00B2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00A2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift */; };
 		113CA00D2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00C2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift */; };
-		113CA0102AB4F34100A4DA78 /* GeneratedLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00F2AB4F34100A4DA78 /* GeneratedLabels.swift */; };
+		113CA0102AB4F34100A4DA78 /* LabelsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */; };
+		113CA0132AB4FB3300A4DA78 /* LabelStorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */; };
 		5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */; };
 		5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */; };
 		5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */; };
@@ -85,7 +86,8 @@
 		113CA0082AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewCellSelection.swift; sourceTree = "<group>"; };
 		113CA00A2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewSizeConfiguration.swift; sourceTree = "<group>"; };
 		113CA00C2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewHeadersAndFooters.swift; sourceTree = "<group>"; };
-		113CA00F2AB4F34100A4DA78 /* GeneratedLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedLabels.swift; sourceTree = "<group>"; };
+		113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsBundle.swift; sourceTree = "<group>"; };
+		113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStorageHelpers.swift; sourceTree = "<group>"; };
 		5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDataSource.swift; sourceTree = "<group>"; };
 		5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDataSource.swift; sourceTree = "<group>"; };
 		5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The User Input Label Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,9 +211,17 @@
 			isa = PBXGroup;
 			children = (
 				113C9FEA2AB394AF00A4DA78 /* CellViewType.swift */,
-				113CA00F2AB4F34100A4DA78 /* GeneratedLabels.swift */,
+				113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		113CA0112AB4FAE900A4DA78 /* Label Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */,
+			);
+			path = "Label Configuration";
 			sourceTree = "<group>";
 		};
 		5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */ = {
@@ -263,6 +273,7 @@
 				5ECEC8692AAFABCC00535B42 /* Cell and Navigation Bar Configuration */,
 				5E1FB9B72AB0FFE600CE9458 /* Protocols and Templates */,
 				5ECEC8662AAFA62E00535B42 /* Utilities */,
+				113CA0112AB4FAE900A4DA78 /* Label Configuration */,
 				5ECEC8262A9ADBDE00535B42 /* Main.storyboard */,
 				5ECEC8292A9ADBDF00535B42 /* Assets.xcassets */,
 				5ECEC8742AAFB24900535B42 /* ThemeColors.xcassets */,
@@ -488,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113CA0132AB4FB3300A4DA78 /* LabelStorageHelpers.swift in Sources */,
 				113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */,
 				113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */,
 				5ECEC8732AAFB15500535B42 /* ThemeColorKit.swift in Sources */,
@@ -509,7 +521,7 @@
 				113C9FF92AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift in Sources */,
 				5ECEC8232A9ADBDE00535B42 /* SceneDelegate.swift in Sources */,
 				113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */,
-				113CA0102AB4F34100A4DA78 /* GeneratedLabels.swift in Sources */,
+				113CA0102AB4F34100A4DA78 /* LabelsBundle.swift in Sources */,
 				5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */,
 				5ECEC87E2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift in Sources */,
 				113C9FFD2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift in Sources */,

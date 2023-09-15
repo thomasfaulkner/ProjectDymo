@@ -84,15 +84,4 @@ class TextFieldTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    // MARK: - Helper Functions
-    
-    #warning("This may not actually be needed, I'm not sure; try and see if it works")
-    func textFromField() -> String? {
-        if let text = textField.text {
-            return text
-        } else {
-            return nil
-        }
-    }
 }
