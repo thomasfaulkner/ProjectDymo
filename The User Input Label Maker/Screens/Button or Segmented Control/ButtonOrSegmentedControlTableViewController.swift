@@ -15,3 +15,4 @@ class ButtonOrSegmentedControlTableViewController: UniversalTableViewController 
         super.viewDidLoad()
         
     }
+}
