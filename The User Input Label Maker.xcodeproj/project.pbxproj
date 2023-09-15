@@ -129,13 +129,14 @@
 			path = "Universal Table View Configuration Templates";
 			sourceTree = "<group>";
 		};
-		113C9FDF2AB3869100A4DA78 /* ButtonOrSegmentedControlTableViewController */ = {
+		113C9FDF2AB3869100A4DA78 /* Button or Segmented Control */ = {
 			isa = PBXGroup;
 			children = (
 				113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */,
 				113C9FE42AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift */,
+				113C9FFB2AB4BF4100A4DA78 /* Extensions */,
 			);
-			path = ButtonOrSegmentedControlTableViewController;
+			path = "Button or Segmented Control";
 			sourceTree = "<group>";
 		};
 		113C9FEC2AB394EE00A4DA78 /* Cell Registration */ = {
@@ -147,14 +148,21 @@
 			path = "Cell Registration";
 			sourceTree = "<group>";
 		};
-		113C9FFA2AB4BD8500A4DA78 /* MainTableViewController Extensions */ = {
+		113C9FFA2AB4BD8500A4DA78 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				113C9FF42AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift */,
 				113C9FF62AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift */,
 				113C9FF82AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift */,
 			);
-			path = "MainTableViewController Extensions";
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113C9FFB2AB4BF4100A4DA78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */ = {
@@ -236,7 +244,7 @@
 			children = (
 				5ECEC8242A9ADBDE00535B42 /* MainTableViewController.swift */,
 				5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */,
-				113C9FFA2AB4BD8500A4DA78 /* MainTableViewController Extensions */,
+				113C9FFA2AB4BD8500A4DA78 /* Extensions */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -264,7 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				5ECEC8652AAFA5F400535B42 /* Main */,
-				113C9FDF2AB3869100A4DA78 /* ButtonOrSegmentedControlTableViewController */,
+				113C9FDF2AB3869100A4DA78 /* Button or Segmented Control */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
