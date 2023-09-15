@@ -14,5 +14,15 @@ class ButtonOrSegmentedControlTableViewController: UniversalTableViewController 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Button or Segmented Control"
+        backButtonText = "Button"
+        
+        // MARK: Configure Table View
+        
+        // Configure table view data source
+        tableView.dataSource = dataSource
+        
+        // Register cells and header/footer views
+        CellRegistrationHelpers.registerCellsAndViews(forTableView: tableView, withCellViewTypes: [.disclosure, .headerFooterView])
     }
 }
