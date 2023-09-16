@@ -48,6 +48,9 @@ class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             // Configure accessibility label
             cell.accessibilityLabel = textContent
             
+            // Configure user input labels
+            cell.accessibilityUserInputLabels = ["\(textContent)"]
+            
             // Mark all cells as Buttons for accessibility tools
             cell.accessibilityTraits = [.button]
             
