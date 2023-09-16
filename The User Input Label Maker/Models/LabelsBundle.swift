@@ -15,13 +15,23 @@ struct LabelsBundle {
         get {
             // If .array is empty, return the array unchanged
             if array.isEmpty == false {
-                var newArray = [String]()
+                
+                var editedArray = [String]()
+                
+                // Format each item in the array
                 array.forEach { item in
+                    var formattedItem: String
+                    
                     // Trim white space and new lines from ends of labels
-                    let trimmedItem = item.trimmingCharacters(in: .whitespacesAndNewlines)
-                    newArray.append(trimmedItem)
+                    formattedItem = item.trimmingCharacters(in: .whitespacesAndNewlines)
+                    
+                    editedArray.append(formattedItem)
                 }
-                return newArray
+                
+                // Filter all empty strings from the array
+                let filteredArray = editedArray.filter { $0 != "" }
+                
+                return filteredArray
             } else {
                 return array
             }
