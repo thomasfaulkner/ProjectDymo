@@ -8,6 +8,7 @@
 import UIKit
 
 class GenerateLabelsTableViewController: UniversalTableViewController {
+    let dataSource = GenerateLabelsTableViewDataSource(labelsBundle: LabelsBundle(array: [String]()))
     var labelsBundle = LabelsBundle(array: [String]())
     
     override func viewDidLoad() {
@@ -18,10 +19,8 @@ class GenerateLabelsTableViewController: UniversalTableViewController {
         backButtonText = "Generate Labels"
         
         // MARK: Configure Table View
-        
-        // Configure table view data source
-        let dataSource = GenerateLabelsTableViewDataSource(labelsBundle: labelsBundle)
         tableView.dataSource = dataSource
+        dataSource.labelsBundle = labelsBundle
         
         // Register cells and header/footer views
         CellRegistrationHelpers.registerCellsAndViews(forTableView: tableView, withCellViewTypes: [.plain, .multilineTextView, .headerFooterView])
