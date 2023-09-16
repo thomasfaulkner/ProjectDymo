@@ -25,6 +25,9 @@ class MultilineTextViewTableViewCell: UITableViewCell {
         #warning(".borderStyle is only available on iOS 17.0 or newer; not sure what I'll have to do here")
         // view.borderStyle = .none
         
+        // Setting keyboard type to email address because the allowed characters line up nicely with how user input labels would need to be formatted — notably, it disallows quotations, but allows most other punctuation.
+        view.keyboardType = .emailAddress
+        
         view.clearsOnInsertion = false
         view.isEditable = true
         view.allowsEditingTextAttributes = false

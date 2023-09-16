@@ -31,9 +31,8 @@ class GenerateLabelsTableViewDataSource: NSObject, UniversalTableViewDataSource 
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: MultilineTextViewTableViewCell.reuseIdentifier, for: indexPath) as! MultilineTextViewTableViewCell
             
-            let placeHolderText = "[\"Favorite\", \"Like\", \"Heart\"]"
             cell.textView.text = "\(labelsBundle.formattedArray)"
-            cell.accessibilityUserInputLabels = ["Formatted Labels", "Labels"]
+            cell.textView.accessibilityUserInputLabels = ["Formatted Labels", "Labels"]
             
             return cell
         case 1:
