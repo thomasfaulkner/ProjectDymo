@@ -15,7 +15,6 @@ class MainTableViewController: UniversalTableViewController {
         super.viewDidLoad()
         
         title = "User Input Label Maker"
-        backButtonText = "Label Maker"
         
         // MARK: Configure Table View
         

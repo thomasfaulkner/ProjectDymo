@@ -15,8 +15,6 @@ class GenerateLabelsTableViewController: UniversalTableViewController {
         super.viewDidLoad()
         
         title = "Generate Labels"
-        // Back button text not needed as this VC should not push to any children, but adding it just in case it ever does
-        backButtonText = "Generate Labels"
         
         // MARK: Configure Table View
         tableView.dataSource = dataSource

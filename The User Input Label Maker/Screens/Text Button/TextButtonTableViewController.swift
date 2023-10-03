@@ -17,7 +17,6 @@ class TextButtonTableViewController: UniversalTableViewController {
         super.viewDidLoad()
         
         title = "Text"
-        backButtonText = "Text"
         
         // MARK: Configure Table View
         

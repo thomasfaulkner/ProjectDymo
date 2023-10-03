@@ -48,11 +48,13 @@ struct NavigationBarConfigurationHelpers {
     
     /// This configuration only needs to be called on parent Table View Controllers, as the final child branch won't have a back button title to configure.
     
-    static func configureParentBackButtonNavigationItem(_ navigationItem: UINavigationItem, withBackButtonText backButtonText: String) {
-        let backButtonItem = UIBarButtonItem(title: "\(backButtonText)", style: .plain, target: self, action: nil)
-        
-        backButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: FontKit.navigationBarBackButtonTitle()], for: .normal)
-        
-        navigationItem.backBarButtonItem = backButtonItem
-    }
+#warning("Removed on 10/2/23 because back button text was causing title text to truncate")
+    
+//    static func configureParentBackButtonNavigationItem(_ navigationItem: UINavigationItem, withBackButtonText backButtonText: String) {
+//        let backButtonItem = UIBarButtonItem(title: "\(backButtonText)", style: .plain, target: self, action: nil)
+//        
+//        backButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: FontKit.navigationBarBackButtonTitle()], for: .normal)
+//        
+//        navigationItem.backBarButtonItem = backButtonItem
+//    }
 }

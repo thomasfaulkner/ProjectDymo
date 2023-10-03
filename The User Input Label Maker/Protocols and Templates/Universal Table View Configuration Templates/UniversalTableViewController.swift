@@ -9,7 +9,9 @@ import UIKit
 
 class UniversalTableViewController: UITableViewController {
     
-    var backButtonText: String = ""
+#warning("Removed on 10/2/23 because back button text was causing title text to truncate")
+    // This should be set in loadView()
+    //var backButtonText: String = ""
     
     init() {
         super.init(style: .insetGrouped)
@@ -25,7 +27,6 @@ class UniversalTableViewController: UITableViewController {
         /*
          Things that will be configured at call site:
          - title
-         - backButtonText
          - Assign table view data source
          - Configure table view delegate
          */
@@ -36,7 +37,7 @@ class UniversalTableViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         
         // Set back button text
-        NavigationBarConfigurationHelpers.configureParentBackButtonNavigationItem(navigationItem, withBackButtonText: "\(backButtonText)")
+        #warning("Removed on 10/2/23 because back button text was causing title text to truncate")
         
         // Configure navigation bar appearance
         if let navBar = navigationController?.navigationBar {

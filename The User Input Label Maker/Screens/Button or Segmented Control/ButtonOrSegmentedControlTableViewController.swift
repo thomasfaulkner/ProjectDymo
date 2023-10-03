@@ -15,7 +15,6 @@ class ButtonOrSegmentedControlTableViewController: UniversalTableViewController 
         super.viewDidLoad()
         
         title = "Button or Segmented Control"
-        backButtonText = "Button"
         
         // MARK: Configure Table View
         
