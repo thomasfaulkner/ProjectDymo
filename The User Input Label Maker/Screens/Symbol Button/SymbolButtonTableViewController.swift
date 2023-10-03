@@ -14,6 +14,7 @@ class SymbolButtonTableViewController: UniversalTableViewController {
     var labelsBundle = LabelsBundle(array: [String]())
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         title = "Symbol Only"
         
         // MARK: Configure Table View

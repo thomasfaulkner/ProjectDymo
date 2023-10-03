@@ -31,7 +31,6 @@
 		113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */; };
 		113CA01B2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */; };
 		113CA01D2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */; };
-		113CA01F2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01E2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift */; };
 		113CA0222AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */; };
 		113CA0262AB6095B00A4DA78 /* CopyLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0252AB6095B00A4DA78 /* CopyLabels.swift */; };
 		11C251262ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C251252ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift */; };
@@ -105,7 +104,6 @@
 		113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewDataSource.swift; sourceTree = "<group>"; };
 		113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewCellSelection.swift; sourceTree = "<group>"; };
 		113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewSizeConfiguration.swift; sourceTree = "<group>"; };
-		113CA01E2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsHeadersAndFooters.swift; sourceTree = "<group>"; };
 		113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextViewTableViewCell.swift; sourceTree = "<group>"; };
 		113CA0252AB6095B00A4DA78 /* CopyLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyLabels.swift; sourceTree = "<group>"; };
 		11C251252ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonTableViewController.swift; sourceTree = "<group>"; };
@@ -265,7 +263,6 @@
 			children = (
 				113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */,
 				113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */,
-				113CA01E2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift */,
 				113CA0252AB6095B00A4DA78 /* CopyLabels.swift */,
 			);
 			path = Extensions;
@@ -622,7 +619,6 @@
 				11C2512D2ACCCEC700CF7F5A /* SymbolButtonTableViewSizeConfiguration.swift in Sources */,
 				113CA0222AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift in Sources */,
 				113CA0262AB6095B00A4DA78 /* CopyLabels.swift in Sources */,
-				113CA01F2AB51CD000A4DA78 /* GenerateLabelsHeadersAndFooters.swift in Sources */,
 				11C2512F2ACCCED700CF7F5A /* SymbolButtonTableViewHeadersAndFooters.swift in Sources */,
 				5ECEC8802AAFCC3000535B42 /* SFSymbolKit.swift in Sources */,
 			);
