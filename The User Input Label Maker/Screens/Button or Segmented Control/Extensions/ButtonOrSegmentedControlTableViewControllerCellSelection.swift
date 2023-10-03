@@ -16,7 +16,6 @@ extension ButtonOrSegmentedControlTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-#warning("Incomplete")
         
         // Push to new TableViewControllers using show(_:, sender:)
         
@@ -25,7 +24,8 @@ extension ButtonOrSegmentedControlTableViewController {
             let vc = TextButtonTableViewController()
             show(vc, sender: self)
         case 1: // "Symbol Only"
-            #warning("Incomplete")
+            let vc = SymbolButtonTableViewController()
+            show(vc, sender: self)
             return
         default:
             return

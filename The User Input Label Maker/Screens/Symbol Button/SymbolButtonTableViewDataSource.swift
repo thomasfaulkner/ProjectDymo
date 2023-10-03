@@ -31,7 +31,7 @@ class SymbolButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
             
-            let placeholderText = "Cloud"
+            let placeholderText = "Rain"
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
@@ -39,7 +39,7 @@ class SymbolButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
             
-            let placeholderText = "Rain"
+            let placeholderText = "Cloud"
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
