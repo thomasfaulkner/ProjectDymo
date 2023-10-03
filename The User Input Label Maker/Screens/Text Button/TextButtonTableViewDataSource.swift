@@ -41,23 +41,6 @@ class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             let cell = ReusableCellConfigurationHelpers.configureGenerateLabelsCell(forTableView: tableView, atIndexPath: indexPath)
             
             return cell
-//            let cell = tableView.dequeueReusableCell(withIdentifier: DisclosureTableViewCell.reuseIdentifier, for: indexPath) as! DisclosureTableViewCell
-//            
-//            let textContent = "Generate Labels"
-//            
-//            // Configure cell content
-//            cell.contentConfiguration = TableViewCellContentConfigurations.basicButtonCell(withText: textContent)
-//            
-//            // Configure accessibility label
-//            cell.accessibilityLabel = textContent
-//            
-//            // Configure user input labels
-//            cell.accessibilityUserInputLabels = ["\(textContent)"]
-//            
-//            // Mark all cells as Buttons for accessibility tools
-//            cell.accessibilityTraits = [.button]
-//            
-//            return cell
         default:
             fatalError("TextButtonTableViewDataSource cellForRowAt: This should never default.")
         }
