@@ -9,7 +9,7 @@ import UIKit
 
 class UniversalTableViewController: UITableViewController {
     
-#warning("Removed on 10/2/23 because back button text was causing title text to truncate")
+#warning("Removed text on 10/2/23 because back button text was causing title text to truncate")
     // This should be set in loadView()
     //var backButtonText: String = ""
     
@@ -37,7 +37,8 @@ class UniversalTableViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         
         // Set back button text
-        #warning("Removed on 10/2/23 because back button text was causing title text to truncate")
+        #warning("Removed text on 10/2/23 because back button text was causing title text to truncate")
+        NavigationBarConfigurationHelpers.configureParentBackButtonNavigationItem(navigationItem)
         
         // Configure navigation bar appearance
         if let navBar = navigationController?.navigationBar {
