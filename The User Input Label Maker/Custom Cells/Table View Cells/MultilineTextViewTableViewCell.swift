@@ -26,6 +26,7 @@ class MultilineTextViewTableViewCell: UITableViewCell {
         // view.borderStyle = .none
         
         // Setting keyboard type to email address because the allowed characters line up nicely with how user input labels would need to be formatted — notably, it disallows quotations, but allows most other punctuation.
+        #warning("Might have to remove this; it caused a weird debugger error with the text field cells")
         view.keyboardType = .emailAddress
         
         view.clearsOnInsertion = false
@@ -69,7 +70,6 @@ class MultilineTextViewTableViewCell: UITableViewCell {
         
         textView.textAlignment = .natural
         textView.font = FontKit.bodyTextRegular()
-        textView.keyboardType = .default
         
         textView.adjustsFontForContentSizeCategory = true
         

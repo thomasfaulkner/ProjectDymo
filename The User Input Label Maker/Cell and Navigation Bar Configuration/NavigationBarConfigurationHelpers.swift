@@ -52,7 +52,7 @@ struct NavigationBarConfigurationHelpers {
     
     static func configureParentBackButtonNavigationItem(_ navigationItem: UINavigationItem) {
         
-        let backButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        let backButtonItem = UIBarButtonItem()
         
         backButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: FontKit.navigationBarBackButtonTitle()], for: .normal)
         
