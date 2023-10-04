@@ -42,6 +42,8 @@ class MultilineTextViewTableViewCell: UITableViewCell {
         #warning("Not sure about this")
         view.isScrollEnabled = false
         
+        view.accessibilityTextualContext = .sourceCode
+        
         return view
     }()
     
