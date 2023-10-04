@@ -52,7 +52,7 @@ extension TextButtonTableViewController {
         case 0:
             headerFooterView.label.text = "Write the button's full text."
         case 1:
-            headerFooterView.label.text = "If the text is long or difficult to say, write a one- or two-word abbreviated version.\n\nFor example, this text field's abbreviated label could be \"Shortened Text\"."
+            headerFooterView.label.text = "If the text is long or difficult to say, write a one- or two-word abbreviated version."
         default:
             return nil
         }
@@ -62,7 +62,7 @@ extension TextButtonTableViewController {
         case 0:
             headerFooterView.accessibilityLabel = "Write the button's full text."
         case 1:
-            headerFooterView.accessibilityLabel = "If the text is long or difficult to say, write a one- or two-word abbreviated version.\n\nFor example, this text field's abbreviated label could be \"Shortened Text\"."
+            headerFooterView.accessibilityLabel = "If the text is long or difficult to say, write a one- or two-word abbreviated version."
         default:
             return nil
         }
