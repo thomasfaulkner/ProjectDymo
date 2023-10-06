@@ -27,8 +27,8 @@ class TextFieldTableViewCell: UITableViewCell {
         field.clearButtonMode = .whileEditing
         
         // Setting keyboard type to email address because the allowed characters line up nicely with how user input labels would need to be formatted — notably, it disallows quotations, but allows most other punctuation.
-        #warning("Removed this for now because it was causing some weird recurring error in the debugger")
-        //field.keyboardType = .emailAddress
+        #warning("May have to remove this, because it might be causing some weird recurring error in the debugger")
+        field.keyboardType = .emailAddress
         
         return field
     }()
