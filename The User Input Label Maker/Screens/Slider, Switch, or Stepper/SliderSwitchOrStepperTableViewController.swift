@@ -1,14 +1,14 @@
 //
-//  TextButtonTableViewController.swift
+//  SliderSwitchOrStepperTableViewController.swift
 //  The User Input Label Maker
 //
-//  Created by Thomas Faulkner on 9/15/23.
+//  Created by Thomas Faulkner on 10/15/23.
 //
 
 import UIKit
 
-class TextButtonTableViewController: UniversalTableViewController {
-    let dataSource = TextButtonTableViewDataSource()
+class SliderSwitchOrStepperTableViewController: UniversalTableViewController {
+    let dataSource = SliderSwitchOrStepperTableViewDataSource()
     
     // Start out with a placeholder LabelsBundle object to be written to when "Generate Labels" is selected
     var labelsBundle = LabelsBundle(array: [String]())
@@ -16,7 +16,7 @@ class TextButtonTableViewController: UniversalTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Text"
+        title = "Slider, Switch, or Stepper"
         
         // MARK: Configure Table View
         

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113025CA2ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */; };
+		113025CC2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */; };
+		113025CF2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */; };
+		113025D12ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025D02ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift */; };
+		113025D32ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025D22ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift */; };
 		113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */; };
 		113C9FDE2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */; };
 		113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */; };
@@ -81,6 +86,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewController.swift; sourceTree = "<group>"; };
+		113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewDataSource.swift; sourceTree = "<group>"; };
+		113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113025D02ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
+		113025D22ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
 		113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableView.swift; sourceTree = "<group>"; };
 		113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalSelectionStateBackgroundView.swift; sourceTree = "<group>"; };
 		113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +176,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113025C82ADCADF3008C1C6F /* Slider, Switch, or Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */,
+				113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */,
+				113025CD2ADCAEB3008C1C6F /* Extensions */,
+			);
+			path = "Slider, Switch, or Stepper";
+			sourceTree = "<group>";
+		};
+		113025CD2ADCAEB3008C1C6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */,
+				113025D02ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift */,
+				113025D22ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		113C9FDA2AB377C100A4DA78 /* Universal Table View Configuration Templates */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +441,7 @@
 				5ECEC8652AAFA5F400535B42 /* Main */,
 				113C9FDF2AB3869100A4DA78 /* Button or Segmented Control */,
 				113CA0022AB4C8BD00A4DA78 /* Text Button */,
+				113025C82ADCADF3008C1C6F /* Slider, Switch, or Stepper */,
 				11C251242ACBC1F600CF7F5A /* Symbol Button */,
 				113CA0142AB51B2900A4DA78 /* Generate Labels */,
 			);
@@ -578,8 +609,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113025CF2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift in Sources */,
 				113CA0132AB4FB3300A4DA78 /* LabelStorageHelpers.swift in Sources */,
 				113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */,
+				113025D32ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift in Sources */,
 				113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */,
 				113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */,
 				113CA0162AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift in Sources */,
@@ -587,6 +620,7 @@
 				113CA01B2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift in Sources */,
 				113CA0012AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift in Sources */,
 				113C9FEB2AB394AF00A4DA78 /* CellViewType.swift in Sources */,
+				113025CA2ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift in Sources */,
 				5ECEC86F2AAFAEB500535B42 /* PlainTableViewCell.swift in Sources */,
 				5ECEC8712AAFAEF300535B42 /* DisclosureTableViewCell.swift in Sources */,
 				5ECEC8252A9ADBDE00535B42 /* MainTableViewController.swift in Sources */,
@@ -615,8 +649,10 @@
 				5ECEC8682AAFA65B00535B42 /* FontKit.swift in Sources */,
 				113CA00D2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift in Sources */,
 				113C9FE92AB390DE00A4DA78 /* CellRegistrationHelpers.swift in Sources */,
+				113025D12ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift in Sources */,
 				113CA0062AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift in Sources */,
 				5ECEC87C2AAFBCA800535B42 /* TextFieldTableViewCell.swift in Sources */,
+				113025CC2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift in Sources */,
 				11C251312ACCD2B800CF7F5A /* ReusableCellConfigurationHelpers.swift in Sources */,
 				113CA0042AB4C90700A4DA78 /* TextButtonTableViewController.swift in Sources */,
 				11C251262ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift in Sources */,
