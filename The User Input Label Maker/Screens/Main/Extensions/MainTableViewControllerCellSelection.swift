@@ -30,6 +30,9 @@ extension MainTableViewController {
             case 1:
                 let vc = SliderSwitchOrStepperTableViewController()
                 show(vc, sender: self)
+            case 2:
+                let vc = TextFieldTableViewController()
+                show(vc, sender: self)
             default:
                 return
             }
