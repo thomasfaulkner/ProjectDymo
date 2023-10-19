@@ -17,7 +17,6 @@ extension MainTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        #warning("Still working on this")
         
         // Push to new TableViewControllers using show(_:, sender:)
         
@@ -38,8 +37,8 @@ extension MainTableViewController {
             }
         case 1: // Section 1: "LEARN"
             // There's only one row in this section, so no indexPath.row switch needed currently
-            #warning("Incomplete")
-            return
+            let vc = TipsTableViewController()
+            show(vc, sender: self)
         default:
             return
         }

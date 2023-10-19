@@ -1,13 +1,13 @@
 //
-//  MainTableViewControllerSizeConfiguration.swift
+//  TipsTableViewControllerSizeConfiguration.swift
 //  The User Input Label Maker
 //
-//  Created by Thomas Faulkner on 9/15/23.
+//  Created by Thomas Faulkner on 10/18/23.
 //
 
 import UIKit
 
-extension MainTableViewController {
+extension TipsTableViewController {
     // MARK: Configure Size
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

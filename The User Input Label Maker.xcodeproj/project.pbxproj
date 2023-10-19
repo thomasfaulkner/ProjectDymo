@@ -17,6 +17,11 @@
 		113025DB2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025DA2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift */; };
 		113025DD2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025DC2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift */; };
 		113025DF2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025DE2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift */; };
+		113025E22AE0C0C1008C1C6F /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E12AE0C0C1008C1C6F /* TipsTableViewController.swift */; };
+		113025E42AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E32AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift */; };
+		113025E72AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E62AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift */; };
+		113025E92AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E82AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift */; };
+		113025EB2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025EA2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift */; };
 		113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */; };
 		113C9FDE2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */; };
 		113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */; };
@@ -101,6 +106,11 @@
 		113025DA2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
 		113025DC2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
 		113025DE2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113025E12AE0C0C1008C1C6F /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
+		113025E32AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerDataSource.swift; sourceTree = "<group>"; };
+		113025E62AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113025E82AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
+		113025EA2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
 		113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableView.swift; sourceTree = "<group>"; };
 		113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalSelectionStateBackgroundView.swift; sourceTree = "<group>"; };
 		113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +232,26 @@
 				113025DA2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift */,
 				113025DC2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift */,
 				113025DE2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113025E02AE0C078008C1C6F /* User Input Label Tips */ = {
+			isa = PBXGroup;
+			children = (
+				113025E12AE0C0C1008C1C6F /* TipsTableViewController.swift */,
+				113025E32AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift */,
+				113025E52AE0C0D5008C1C6F /* Extensions */,
+			);
+			path = "User Input Label Tips";
+			sourceTree = "<group>";
+		};
+		113025E52AE0C0D5008C1C6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113025E62AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift */,
+				113025E82AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift */,
+				113025EA2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -475,6 +505,7 @@
 				113025D42AE0B709008C1C6F /* Text Field */,
 				11C251242ACBC1F600CF7F5A /* Symbol Button */,
 				113CA0142AB51B2900A4DA78 /* Generate Labels */,
+				113025E02AE0C078008C1C6F /* User Input Label Tips */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -646,6 +677,7 @@
 				113025D32ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift in Sources */,
 				113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */,
 				113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */,
+				113025E42AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift in Sources */,
 				113CA0162AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift in Sources */,
 				113025DB2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift in Sources */,
 				5ECEC8732AAFB15500535B42 /* ThemeColorKit.swift in Sources */,
@@ -662,6 +694,7 @@
 				113CA00B2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift in Sources */,
 				5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */,
 				113C9FFF2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift in Sources */,
+				113025E92AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift in Sources */,
 				5ECEC86B2AAFAD6900535B42 /* TableViewCellContentConfigurations.swift in Sources */,
 				113C9FE72AB388BB00A4DA78 /* UniversalTableViewController.swift in Sources */,
 				113CA01D2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift in Sources */,
@@ -687,16 +720,19 @@
 				113C9FE92AB390DE00A4DA78 /* CellRegistrationHelpers.swift in Sources */,
 				113025D12ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift in Sources */,
 				113CA0062AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift in Sources */,
+				113025E22AE0C0C1008C1C6F /* TipsTableViewController.swift in Sources */,
 				5ECEC87C2AAFBCA800535B42 /* TextFieldTableViewCell.swift in Sources */,
 				113025CC2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift in Sources */,
 				11C251312ACCD2B800CF7F5A /* ReusableCellConfigurationHelpers.swift in Sources */,
 				113CA0042AB4C90700A4DA78 /* TextButtonTableViewController.swift in Sources */,
 				11C251262ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift in Sources */,
+				113025E72AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift in Sources */,
 				11C2512D2ACCCEC700CF7F5A /* SymbolButtonTableViewSizeConfiguration.swift in Sources */,
 				113CA0222AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift in Sources */,
 				113CA0262AB6095B00A4DA78 /* CopyLabels.swift in Sources */,
 				11C2512F2ACCCED700CF7F5A /* SymbolButtonTableViewHeadersAndFooters.swift in Sources */,
 				5ECEC8802AAFCC3000535B42 /* SFSymbolKit.swift in Sources */,
+				113025EB2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
