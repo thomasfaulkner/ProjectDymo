@@ -68,15 +68,15 @@ struct FontKit {
         return font
     }
     
-    static func headerText() -> UIFont {
-        var font = UIFont()
-        
-        font = UIFontMetrics(forTextStyle: .subheadline).scaledFont(for: FontKit.roundedFont(ofSize: 15, weight: .regular))
-        
-        return font
-    }
+//    static func headerText() -> UIFont {
+//        var font = UIFont()
+//        
+//        font = UIFontMetrics(forTextStyle: .subheadline).scaledFont(for: FontKit.roundedFont(ofSize: 15, weight: .regular))
+//        
+//        return font
+//    }
     
-    static func footerText() -> UIFont {
+    static func headerFooterText() -> UIFont {
         var font = UIFont()
         
         font = UIFontMetrics(forTextStyle: .footnote).scaledFont(for: FontKit.roundedFont(ofSize: 14, weight: .regular))

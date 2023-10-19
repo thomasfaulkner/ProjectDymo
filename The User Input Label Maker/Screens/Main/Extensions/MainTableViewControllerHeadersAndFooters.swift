@@ -18,7 +18,7 @@ extension MainTableViewController {
         guard let headerFooterView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderFooterView.reuseIdentifier) as? HeaderFooterView else { return nil }
         
         // Configure font
-        headerFooterView.label.font = FontKit.headerText()
+        headerFooterView.label.font = FontKit.headerFooterText()
         
         // Configure text content of header views
         switch section {
