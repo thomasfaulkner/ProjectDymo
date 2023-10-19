@@ -49,7 +49,7 @@ extension SliderSwitchOrStepperTableViewController {
         // Configure text content of footer views
         switch section {
         case 0:
-            headerFooterView.label.text = "Write the full text label for the control.\n\nNote: Though not preferred, occasionally some controls may not have a text label. In that case, write a brief label as if it did.\n\nFor example, the rotary stepper in Camera that selects Photo, Video, Portrait, etc. is labelled \"Camera Mode\"."
+            headerFooterView.label.text = "Write the full text label for the control.\n\nNote: Though not preferred, some controls may not have a text label. In that case, write a brief label as if it did.\n\nFor example, the unlabeled rotary stepper in Camera that selects Photo, Video, Portrait, etc. is labelled \"Camera Mode\"."
         case 1:
             headerFooterView.label.text = "If the text is long or difficult to say, write a one- or two-word abbreviated version."
         default:
@@ -59,7 +59,7 @@ extension SliderSwitchOrStepperTableViewController {
         // Configure accessibility labels
         switch section {
         case 0:
-            headerFooterView.accessibilityLabel = "Write the full text label for the control. Note: Though not preferred, occasionally some controls may not have a text label. In that case, write a brief label as if it did. For example, the rotary stepper in Camera that selects Photo, Video, Portrait, etc. is labelled \"Camera Mode\"."
+            headerFooterView.accessibilityLabel = "Write the full text label for the control. Note: Though not preferred, some controls may not have a text label. In that case, write a brief label as if it did. For example, the unlabeled rotary stepper in Camera that selects Photo, Video, Portrait, etc. is labelled \"Camera Mode.\""
         case 1:
             headerFooterView.accessibilityLabel = "If the text is long or difficult to say, write a one- or two-word abbreviated version."
         default:

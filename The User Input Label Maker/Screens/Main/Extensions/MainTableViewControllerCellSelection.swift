@@ -27,6 +27,9 @@ extension MainTableViewController {
             case 0:
                 let vc = ButtonOrSegmentedControlTableViewController()
                 show(vc, sender: self)
+            case 1:
+                let vc = SliderSwitchOrStepperTableViewController()
+                show(vc, sender: self)
             default:
                 return
             }
