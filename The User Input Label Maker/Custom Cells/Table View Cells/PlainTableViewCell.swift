@@ -18,6 +18,9 @@ class PlainTableViewCell: UITableViewCell {
         
         // Configure translucent overlay that is displayed on cell selection
         selectedBackgroundView = UniversalSelectionStateBackgroundView()
+        
+        // MARK: Configure Selection Behavior
+        selectionStyle = .none
     }
     
     required init?(coder: NSCoder) {

@@ -72,6 +72,9 @@ class TextFieldTableViewCell: UITableViewCell {
         
         textField.textColor = ThemeColorKit.bodyTextColor()
         
+        // MARK: Configure Selection Behavior
+        selectionStyle = .none
+        
         // MARK: Configure Accessibility
         #warning("This may be the correct behavior, but I'm not sure")
         self.shouldGroupAccessibilityChildren = true
