@@ -501,9 +501,9 @@
 				5ECEC8652AAFA5F400535B42 /* Main */,
 				113C9FDF2AB3869100A4DA78 /* Button or Segmented Control */,
 				113CA0022AB4C8BD00A4DA78 /* Text Button */,
+				11C251242ACBC1F600CF7F5A /* Symbol Button */,
 				113025C82ADCADF3008C1C6F /* Slider, Switch, or Stepper */,
 				113025D42AE0B709008C1C6F /* Text Field */,
-				11C251242ACBC1F600CF7F5A /* Symbol Button */,
 				113CA0142AB51B2900A4DA78 /* Generate Labels */,
 				113025E02AE0C078008C1C6F /* User Input Label Tips */,
 			);

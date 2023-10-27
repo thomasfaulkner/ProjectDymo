@@ -8,6 +8,12 @@
 import UIKit
 
 class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
+    var textFieldContent = [IndexPath : String]() {
+        didSet {
+            print("Text field content: \(textFieldContent)")
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -28,6 +34,10 @@ class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
+            cell.didFinishEditingAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
@@ -35,6 +45,10 @@ class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             let placeHolderText = "More Albums"
             cell.textField.placeholder = placeHolderText
             cell.accessibilityUserInputLabels = ["\(placeHolderText)"]
+            
+            cell.didFinishEditingAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
             
             return cell
         case 2:

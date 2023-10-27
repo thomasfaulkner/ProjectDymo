@@ -33,6 +33,10 @@ class TextFieldTableViewCell: UITableViewCell {
         return field
     }()
     
+    // MARK: - Action Closure
+    
+    var didFinishEditingAction: ((UITableViewCell) -> Void)?
+    
     // MARK: - Initializer
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -55,6 +59,9 @@ class TextFieldTableViewCell: UITableViewCell {
             textField.topAnchor.constraint(equalTo: containerView.topAnchor),
             textField.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
+        
+        // Configure call to editingDidEnd(forTextField:) when editing ends
+        textField.addTarget(self, action: #selector(editingDidEnd(_:)), for: .editingDidEnd)
         
         // MARK: Configure Text
         
@@ -81,6 +88,11 @@ class TextFieldTableViewCell: UITableViewCell {
         
         // Text field cells should not need accessibility traits
         // Accessibility user input labels will be set individually at call site
+    }
+    
+    // Call the closure passed in
+    @objc func editingDidEnd(_ textField: UITextField) {
+        didFinishEditingAction?(self)
     }
     
     required init?(coder: NSCoder) {

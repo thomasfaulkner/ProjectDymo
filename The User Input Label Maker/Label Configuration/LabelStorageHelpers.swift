@@ -9,6 +9,18 @@ import Foundation
 import UIKit
 
 struct LabelStorageHelpers {
+    static func textFromField(inCell cell: UITableViewCell) -> String? {
+        // If the cell is not a text field cell, return nil
+        guard let textFieldCell = cell as? TextFieldTableViewCell else { return nil }
+        
+        // If there is no text in the text field, return nil
+        if let textContent = textFieldCell.textField.text {
+            return textContent
+        } else {
+            return nil
+        }
+    }
+    
     static func makeLabelsBundleFromTableView(_ tableView: UITableView, atIndexPaths indexPaths: [IndexPath]) -> LabelsBundle {
         
         /// Tree "diagram" of how this function works:
