@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct LabelStorageHelpers {
+    // Called in table view data source to get text content of text field cells for storage in a [IndexPath : String] dictionary.
     static func textFromField(inCell cell: UITableViewCell) -> String? {
         // If the cell is not a text field cell, return nil
         guard let textFieldCell = cell as? TextFieldTableViewCell else { return nil }
@@ -18,6 +19,29 @@ struct LabelStorageHelpers {
             return textContent
         } else {
             return nil
+        }
+    }
+    
+    // This function takes a string dictionary stored in a table view data source and returns a LabelsBundle. If the string dictionary is empty, it will return a LabelsBundle with an empty string array.
+    static func makeLabelsBundle(fromStringDictionary stringDictionary: [IndexPath : String]) -> LabelsBundle {
+        print("Here's the string dictionary I'm making a labels bundle from: \(stringDictionary)")
+        
+        // Sort dictionary by (key) indexPath from lowest to highest, because the text fields on a page are ordered from most to least important.
+        // This is important for the labels bundle, because a User Input Labels array is accessed in order of priority starting at index 0.
+        let sortedDictionaryArray = stringDictionary.sorted {
+            $0.0 < $1.0
+        }
+        
+        var stringsFromSortedDictionary = [String]()
+        
+        for (_, value) in sortedDictionaryArray {
+            stringsFromSortedDictionary.append(value)
+        }
+        
+        if stringsFromSortedDictionary.isEmpty {
+            return LabelsBundle(array: [String]())
+        } else {
+            return LabelsBundle(array: stringsFromSortedDictionary)
         }
     }
     

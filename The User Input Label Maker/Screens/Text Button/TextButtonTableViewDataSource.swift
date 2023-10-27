@@ -34,7 +34,7 @@ class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
-            cell.didFinishEditingAction = { [weak self] (thisCell) in
+            cell.editingChangedAction = { [weak self] (thisCell) in
                 self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
             }
             
@@ -46,7 +46,7 @@ class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             cell.textField.placeholder = placeHolderText
             cell.accessibilityUserInputLabels = ["\(placeHolderText)"]
             
-            cell.didFinishEditingAction = { [weak self] (thisCell) in
+            cell.editingChangedAction = { [weak self] (thisCell) in
                 self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
             }
             

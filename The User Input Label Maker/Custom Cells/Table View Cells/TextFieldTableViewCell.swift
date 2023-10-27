@@ -35,7 +35,9 @@ class TextFieldTableViewCell: UITableViewCell {
     
     // MARK: - Action Closure
     
-    var didFinishEditingAction: ((UITableViewCell) -> Void)?
+    // This closure will be passed in at the call site (table view data source).
+    // The closure will store a text field's text content in a string dictionary.
+    var editingChangedAction: ((UITableViewCell) -> Void)?
     
     // MARK: - Initializer
     
@@ -60,8 +62,8 @@ class TextFieldTableViewCell: UITableViewCell {
             textField.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
         
-        // Configure call to editingDidEnd(forTextField:) when editing ends
-        textField.addTarget(self, action: #selector(editingDidEnd(_:)), for: .editingDidEnd)
+        // Call editingChanged(_:) whenever editing changes in a text field. editingChanged(_:) then calls the editingChangedAction closure.
+        textField.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
         
         // MARK: Configure Text
         
@@ -90,9 +92,9 @@ class TextFieldTableViewCell: UITableViewCell {
         // Accessibility user input labels will be set individually at call site
     }
     
-    // Call the closure passed in
-    @objc func editingDidEnd(_ textField: UITextField) {
-        didFinishEditingAction?(self)
+    // Call the closure passed in from table view data source
+    @objc func editingChanged(_ textField: UITextField) {
+        editingChangedAction?(self)
     }
     
     required init?(coder: NSCoder) {
