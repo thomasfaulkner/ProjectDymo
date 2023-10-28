@@ -7,7 +7,9 @@
 
 import UIKit
 
-class TextFieldTableViewControllerDataSource: NSObject, UniversalTableViewDataSource {
+class TextFieldTableViewControllerDataSource: NSObject, UniversalTextEntryDataSource {
+    var textFieldContent = [IndexPath : String]()
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -26,6 +28,10 @@ class TextFieldTableViewControllerDataSource: NSObject, UniversalTableViewDataSo
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
+            cell.editingChangedAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
@@ -33,6 +39,10 @@ class TextFieldTableViewControllerDataSource: NSObject, UniversalTableViewDataSo
             let placeholderText = "Address"
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
+            
+            cell.editingChangedAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
             
             return cell
         case 2:

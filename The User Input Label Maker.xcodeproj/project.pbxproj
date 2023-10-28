@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112062912AEC837500E72445 /* UniversalTextEntryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112062902AEC837500E72445 /* UniversalTextEntryDataSource.swift */; };
 		113025CA2ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */; };
 		113025CC2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */; };
 		113025CF2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */; };
@@ -96,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112062902AEC837500E72445 /* UniversalTextEntryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTextEntryDataSource.swift; sourceTree = "<group>"; };
 		113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewController.swift; sourceTree = "<group>"; };
 		113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewDataSource.swift; sourceTree = "<group>"; };
 		113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */,
+				112062902AEC837500E72445 /* UniversalTextEntryDataSource.swift */,
 			);
 			path = "Universal Table View Protocols";
 			sourceTree = "<group>";
@@ -676,6 +679,7 @@
 				113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */,
 				113025D32ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift in Sources */,
 				113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */,
+				112062912AEC837500E72445 /* UniversalTextEntryDataSource.swift in Sources */,
 				113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */,
 				113025E42AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift in Sources */,
 				113CA0162AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift in Sources */,

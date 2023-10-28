@@ -30,13 +30,9 @@ extension SliderSwitchOrStepperTableViewController {
             
             // MARK: Make labels bundle object to pass into next VC
             
-            let textFieldCellIndexPaths: [IndexPath] = [
-                IndexPath(row: 0, section: 0),
-                IndexPath(row: 0, section: 1)
-            ]
+            let stringDictionary = dataSource.textFieldContent
             
-            // Get text from each text field, collect it in an array of Strings, wrap that array in a LabelsBundle object, and store that bundle as a property in this table view controller.
-            labelsBundle = LabelStorageHelpers.makeLabelsBundleFromTableView(tableView, atIndexPaths: textFieldCellIndexPaths)
+            labelsBundle = LabelStorageHelpers.makeLabelsBundle(fromStringDictionary: stringDictionary)
             
             print("Array: \(labelsBundle.array)\nFormatted Array: \(labelsBundle.formattedArray)")
             

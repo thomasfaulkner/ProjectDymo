@@ -7,7 +7,9 @@
 
 import UIKit
 
-class SliderSwitchOrStepperTableViewDataSource: NSObject, UniversalTableViewDataSource {
+class SliderSwitchOrStepperTableViewDataSource: NSObject, UniversalTextEntryDataSource {
+    var textFieldContent = [IndexPath : String]()
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -28,6 +30,10 @@ class SliderSwitchOrStepperTableViewDataSource: NSObject, UniversalTableViewData
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
+            cell.editingChangedAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
@@ -35,6 +41,10 @@ class SliderSwitchOrStepperTableViewDataSource: NSObject, UniversalTableViewData
             let placeholderText = "Brightness"
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
+            
+            cell.editingChangedAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
             
             return cell
         case 2:

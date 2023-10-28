@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
+class TextButtonTableViewDataSource: NSObject, UniversalTextEntryDataSource {
     var textFieldContent = [IndexPath : String]() {
         didSet {
             print("Text field content: \(textFieldContent)")

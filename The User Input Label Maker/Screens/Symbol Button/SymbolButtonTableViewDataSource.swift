@@ -7,7 +7,9 @@
 
 import UIKit
 
-class SymbolButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
+class SymbolButtonTableViewDataSource: NSObject, UniversalTextEntryDataSource {
+    var textFieldContent = [IndexPath : String]()
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
@@ -27,6 +29,10 @@ class SymbolButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
+            cell.editingChangedAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
@@ -35,6 +41,10 @@ class SymbolButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
+            cell.editingChangedAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
+            
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
@@ -42,6 +52,10 @@ class SymbolButtonTableViewDataSource: NSObject, UniversalTableViewDataSource {
             let placeholderText = "Cloud"
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
+            
+            cell.editingChangedAction = { [weak self] (thisCell) in
+                self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
+            }
             
             return cell
         case 3:
