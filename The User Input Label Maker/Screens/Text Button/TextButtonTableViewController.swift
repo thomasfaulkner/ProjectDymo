@@ -26,4 +26,10 @@ class TextButtonTableViewController: UniversalTableViewController {
         // Register cells and header/footer views
         CellRegistrationHelpers.registerCellsAndViews(forTableView: tableView, withCellViewTypes: [.disclosure, .headerFooterView, .textField])
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.view.endEditing(true)
+    }
 }
