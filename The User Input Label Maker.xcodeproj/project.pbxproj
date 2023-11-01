@@ -1,0 +1,1083 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		112062912AEC837500E72445 /* UniversalTextEntryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112062902AEC837500E72445 /* UniversalTextEntryDataSource.swift */; };
+		113025CA2ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */; };
+		113025CC2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */; };
+		113025CF2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */; };
+		113025D12ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025D02ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift */; };
+		113025D32ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025D22ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift */; };
+		113025D62AE0B738008C1C6F /* TextFieldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025D52AE0B738008C1C6F /* TextFieldTableViewController.swift */; };
+		113025D82AE0B74F008C1C6F /* TextFieldTableViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025D72AE0B74F008C1C6F /* TextFieldTableViewControllerDataSource.swift */; };
+		113025DB2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025DA2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift */; };
+		113025DD2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025DC2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift */; };
+		113025DF2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025DE2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift */; };
+		113025E22AE0C0C1008C1C6F /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E12AE0C0C1008C1C6F /* TipsTableViewController.swift */; };
+		113025E42AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E32AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift */; };
+		113025E72AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E62AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift */; };
+		113025E92AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025E82AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift */; };
+		113025EB2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113025EA2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift */; };
+		113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */; };
+		113C9FDE2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */; };
+		113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */; };
+		113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE42AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift */; };
+		113C9FE72AB388BB00A4DA78 /* UniversalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE62AB388BB00A4DA78 /* UniversalTableViewController.swift */; };
+		113C9FE92AB390DE00A4DA78 /* CellRegistrationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FE82AB390DE00A4DA78 /* CellRegistrationHelpers.swift */; };
+		113C9FEB2AB394AF00A4DA78 /* CellViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FEA2AB394AF00A4DA78 /* CellViewType.swift */; };
+		113C9FF52AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FF42AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift */; };
+		113C9FF72AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FF62AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift */; };
+		113C9FF92AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FF82AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift */; };
+		113C9FFD2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FFC2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift */; };
+		113C9FFF2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C9FFE2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift */; };
+		113CA0012AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0002AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift */; };
+		113CA0042AB4C90700A4DA78 /* TextButtonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0032AB4C90700A4DA78 /* TextButtonTableViewController.swift */; };
+		113CA0062AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0052AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift */; };
+		113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0082AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift */; };
+		113CA00B2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00A2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift */; };
+		113CA00D2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00C2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift */; };
+		113CA0102AB4F34100A4DA78 /* LabelsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */; };
+		113CA0132AB4FB3300A4DA78 /* LabelStorageHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */; };
+		113CA0162AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0152AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift */; };
+		113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */; };
+		113CA01B2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */; };
+		113CA01D2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */; };
+		113CA0222AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */; };
+		113CA0262AB6095B00A4DA78 /* CopyLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CA0252AB6095B00A4DA78 /* CopyLabels.swift */; };
+		11C251262ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C251252ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift */; };
+		11C251282ACCCE7E00CF7F5A /* SymbolButtonTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C251272ACCCE7E00CF7F5A /* SymbolButtonTableViewDataSource.swift */; };
+		11C2512B2ACCCEAB00CF7F5A /* SymbolButtonTableViewCellSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C2512A2ACCCEAB00CF7F5A /* SymbolButtonTableViewCellSelection.swift */; };
+		11C2512D2ACCCEC700CF7F5A /* SymbolButtonTableViewSizeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C2512C2ACCCEC700CF7F5A /* SymbolButtonTableViewSizeConfiguration.swift */; };
+		11C2512F2ACCCED700CF7F5A /* SymbolButtonTableViewHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C2512E2ACCCED700CF7F5A /* SymbolButtonTableViewHeadersAndFooters.swift */; };
+		11C251312ACCD2B800CF7F5A /* ReusableCellConfigurationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C251302ACCD2B800CF7F5A /* ReusableCellConfigurationHelpers.swift */; };
+		11C251332ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C251322ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift */; };
+		5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */; };
+		5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */; };
+		5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */; };
+		5ECEC8232A9ADBDE00535B42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8222A9ADBDE00535B42 /* SceneDelegate.swift */; };
+		5ECEC8252A9ADBDE00535B42 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8242A9ADBDE00535B42 /* MainTableViewController.swift */; };
+		5ECEC8282A9ADBDE00535B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECEC8262A9ADBDE00535B42 /* Main.storyboard */; };
+		5ECEC82A2A9ADBDF00535B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECEC8292A9ADBDF00535B42 /* Assets.xcassets */; };
+		5ECEC82D2A9ADBDF00535B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECEC82B2A9ADBDF00535B42 /* LaunchScreen.storyboard */; };
+		5ECEC8382A9ADBDF00535B42 /* The_User_Input_Label_MakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8372A9ADBDF00535B42 /* The_User_Input_Label_MakerTests.swift */; };
+		5ECEC8422A9ADBDF00535B42 /* The_User_Input_Label_MakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8412A9ADBDF00535B42 /* The_User_Input_Label_MakerUITests.swift */; };
+		5ECEC8442A9ADBDF00535B42 /* The_User_Input_Label_MakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8432A9ADBDF00535B42 /* The_User_Input_Label_MakerUITestsLaunchTests.swift */; };
+		5ECEC8682AAFA65B00535B42 /* FontKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8672AAFA65B00535B42 /* FontKit.swift */; };
+		5ECEC86B2AAFAD6900535B42 /* TableViewCellContentConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC86A2AAFAD6900535B42 /* TableViewCellContentConfigurations.swift */; };
+		5ECEC86F2AAFAEB500535B42 /* PlainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC86E2AAFAEB500535B42 /* PlainTableViewCell.swift */; };
+		5ECEC8712AAFAEF300535B42 /* DisclosureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8702AAFAEF300535B42 /* DisclosureTableViewCell.swift */; };
+		5ECEC8732AAFB15500535B42 /* ThemeColorKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8722AAFB15500535B42 /* ThemeColorKit.swift */; };
+		5ECEC8752AAFB24900535B42 /* ThemeColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECEC8742AAFB24900535B42 /* ThemeColors.xcassets */; };
+		5ECEC87A2AAFBAD800535B42 /* HeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8792AAFBAD800535B42 /* HeaderFooterView.swift */; };
+		5ECEC87C2AAFBCA800535B42 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC87B2AAFBCA800535B42 /* TextFieldTableViewCell.swift */; };
+		5ECEC87E2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC87D2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift */; };
+		5ECEC8802AAFCC3000535B42 /* SFSymbolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC87F2AAFCC3000535B42 /* SFSymbolKit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ECEC8342A9ADBDF00535B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ECEC8152A9ADBDE00535B42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ECEC81C2A9ADBDE00535B42;
+			remoteInfo = "The User Input Label Maker";
+		};
+		5ECEC83E2A9ADBDF00535B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ECEC8152A9ADBDE00535B42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ECEC81C2A9ADBDE00535B42;
+			remoteInfo = "The User Input Label Maker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		112062902AEC837500E72445 /* UniversalTextEntryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTextEntryDataSource.swift; sourceTree = "<group>"; };
+		113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewController.swift; sourceTree = "<group>"; };
+		113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewDataSource.swift; sourceTree = "<group>"; };
+		113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113025D02ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
+		113025D22ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113025D52AE0B738008C1C6F /* TextFieldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewController.swift; sourceTree = "<group>"; };
+		113025D72AE0B74F008C1C6F /* TextFieldTableViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewControllerDataSource.swift; sourceTree = "<group>"; };
+		113025DA2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113025DC2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
+		113025DE2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113025E12AE0C0C1008C1C6F /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
+		113025E32AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerDataSource.swift; sourceTree = "<group>"; };
+		113025E62AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113025E82AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
+		113025EA2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableView.swift; sourceTree = "<group>"; };
+		113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalSelectionStateBackgroundView.swift; sourceTree = "<group>"; };
+		113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewController.swift; sourceTree = "<group>"; };
+		113C9FE42AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewDataSource.swift; sourceTree = "<group>"; };
+		113C9FE62AB388BB00A4DA78 /* UniversalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewController.swift; sourceTree = "<group>"; };
+		113C9FE82AB390DE00A4DA78 /* CellRegistrationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRegistrationHelpers.swift; sourceTree = "<group>"; };
+		113C9FEA2AB394AF00A4DA78 /* CellViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewType.swift; sourceTree = "<group>"; };
+		113C9FF42AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113C9FF62AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
+		113C9FF82AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113C9FFC2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewControllerCellSelection.swift; sourceTree = "<group>"; };
+		113C9FFE2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113CA0002AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift; sourceTree = "<group>"; };
+		113CA0032AB4C90700A4DA78 /* TextButtonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewController.swift; sourceTree = "<group>"; };
+		113CA0052AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewDataSource.swift; sourceTree = "<group>"; };
+		113CA0082AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewCellSelection.swift; sourceTree = "<group>"; };
+		113CA00A2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewSizeConfiguration.swift; sourceTree = "<group>"; };
+		113CA00C2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonTableViewHeadersAndFooters.swift; sourceTree = "<group>"; };
+		113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsBundle.swift; sourceTree = "<group>"; };
+		113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStorageHelpers.swift; sourceTree = "<group>"; };
+		113CA0152AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewController.swift; sourceTree = "<group>"; };
+		113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewDataSource.swift; sourceTree = "<group>"; };
+		113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewCellSelection.swift; sourceTree = "<group>"; };
+		113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewSizeConfiguration.swift; sourceTree = "<group>"; };
+		113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextViewTableViewCell.swift; sourceTree = "<group>"; };
+		113CA0252AB6095B00A4DA78 /* CopyLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyLabels.swift; sourceTree = "<group>"; };
+		11C251252ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonTableViewController.swift; sourceTree = "<group>"; };
+		11C251272ACCCE7E00CF7F5A /* SymbolButtonTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonTableViewDataSource.swift; sourceTree = "<group>"; };
+		11C2512A2ACCCEAB00CF7F5A /* SymbolButtonTableViewCellSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonTableViewCellSelection.swift; sourceTree = "<group>"; };
+		11C2512C2ACCCEC700CF7F5A /* SymbolButtonTableViewSizeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonTableViewSizeConfiguration.swift; sourceTree = "<group>"; };
+		11C2512E2ACCCED700CF7F5A /* SymbolButtonTableViewHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonTableViewHeadersAndFooters.swift; sourceTree = "<group>"; };
+		11C251302ACCD2B800CF7F5A /* ReusableCellConfigurationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellConfigurationHelpers.swift; sourceTree = "<group>"; };
+		11C251322ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewHeadersAndFooters.swift; sourceTree = "<group>"; };
+		5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDataSource.swift; sourceTree = "<group>"; };
+		5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDataSource.swift; sourceTree = "<group>"; };
+		5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The User Input Label Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5ECEC8222A9ADBDE00535B42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5ECEC8242A9ADBDE00535B42 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		5ECEC8272A9ADBDE00535B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5ECEC8292A9ADBDF00535B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ECEC82C2A9ADBDF00535B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5ECEC82E2A9ADBDF00535B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ECEC8332A9ADBDF00535B42 /* The User Input Label MakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The User Input Label MakerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECEC8372A9ADBDF00535B42 /* The_User_Input_Label_MakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_User_Input_Label_MakerTests.swift; sourceTree = "<group>"; };
+		5ECEC83D2A9ADBDF00535B42 /* The User Input Label MakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The User Input Label MakerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECEC8412A9ADBDF00535B42 /* The_User_Input_Label_MakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_User_Input_Label_MakerUITests.swift; sourceTree = "<group>"; };
+		5ECEC8432A9ADBDF00535B42 /* The_User_Input_Label_MakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_User_Input_Label_MakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5ECEC8672AAFA65B00535B42 /* FontKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontKit.swift; sourceTree = "<group>"; };
+		5ECEC86A2AAFAD6900535B42 /* TableViewCellContentConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellContentConfigurations.swift; sourceTree = "<group>"; };
+		5ECEC86E2AAFAEB500535B42 /* PlainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTableViewCell.swift; sourceTree = "<group>"; };
+		5ECEC8702AAFAEF300535B42 /* DisclosureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureTableViewCell.swift; sourceTree = "<group>"; };
+		5ECEC8722AAFB15500535B42 /* ThemeColorKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorKit.swift; sourceTree = "<group>"; };
+		5ECEC8742AAFB24900535B42 /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
+		5ECEC8792AAFBAD800535B42 /* HeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFooterView.swift; sourceTree = "<group>"; };
+		5ECEC87B2AAFBCA800535B42 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		5ECEC87D2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurationHelpers.swift; sourceTree = "<group>"; };
+		5ECEC87F2AAFCC3000535B42 /* SFSymbolKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolKit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ECEC81A2A9ADBDE00535B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECEC8302A9ADBDF00535B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECEC83A2A9ADBDF00535B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		113025C82ADCADF3008C1C6F /* Slider, Switch, or Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				113025C92ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift */,
+				113025CB2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift */,
+				113025CD2ADCAEB3008C1C6F /* Extensions */,
+			);
+			path = "Slider, Switch, or Stepper";
+			sourceTree = "<group>";
+		};
+		113025CD2ADCAEB3008C1C6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113025CE2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift */,
+				113025D02ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift */,
+				113025D22ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113025D42AE0B709008C1C6F /* Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				113025D52AE0B738008C1C6F /* TextFieldTableViewController.swift */,
+				113025D72AE0B74F008C1C6F /* TextFieldTableViewControllerDataSource.swift */,
+				113025D92AE0B75C008C1C6F /* Extensions */,
+			);
+			path = "Text Field";
+			sourceTree = "<group>";
+		};
+		113025D92AE0B75C008C1C6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113025DA2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift */,
+				113025DC2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift */,
+				113025DE2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113025E02AE0C078008C1C6F /* User Input Label Tips */ = {
+			isa = PBXGroup;
+			children = (
+				113025E12AE0C0C1008C1C6F /* TipsTableViewController.swift */,
+				113025E32AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift */,
+				113025E52AE0C0D5008C1C6F /* Extensions */,
+			);
+			path = "User Input Label Tips";
+			sourceTree = "<group>";
+		};
+		113025E52AE0C0D5008C1C6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113025E62AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift */,
+				113025E82AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift */,
+				113025EA2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113C9FDA2AB377C100A4DA78 /* Universal Table View Configuration Templates */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FDB2AB3783B00A4DA78 /* UniversalTableView.swift */,
+				113C9FE62AB388BB00A4DA78 /* UniversalTableViewController.swift */,
+			);
+			path = "Universal Table View Configuration Templates";
+			sourceTree = "<group>";
+		};
+		113C9FDF2AB3869100A4DA78 /* Button or Segmented Control */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FE02AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift */,
+				113C9FE42AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift */,
+				113C9FFB2AB4BF4100A4DA78 /* Extensions */,
+			);
+			path = "Button or Segmented Control";
+			sourceTree = "<group>";
+		};
+		113C9FEC2AB394EE00A4DA78 /* Cell Registration */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FE82AB390DE00A4DA78 /* CellRegistrationHelpers.swift */,
+			);
+			path = "Cell Registration";
+			sourceTree = "<group>";
+		};
+		113C9FFA2AB4BD8500A4DA78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FF42AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift */,
+				113C9FF62AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift */,
+				113C9FF82AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113C9FFB2AB4BF4100A4DA78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FFC2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift */,
+				113CA0002AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift */,
+				113C9FFE2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113CA0022AB4C8BD00A4DA78 /* Text Button */ = {
+			isa = PBXGroup;
+			children = (
+				113CA0032AB4C90700A4DA78 /* TextButtonTableViewController.swift */,
+				113CA0052AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift */,
+				113CA0072AB4C92800A4DA78 /* Extensions */,
+			);
+			path = "Text Button";
+			sourceTree = "<group>";
+		};
+		113CA0072AB4C92800A4DA78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113CA0082AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift */,
+				113CA00A2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift */,
+				113CA00C2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113CA00E2AB4F2E000A4DA78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FEA2AB394AF00A4DA78 /* CellViewType.swift */,
+				113CA00F2AB4F34100A4DA78 /* LabelsBundle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		113CA0112AB4FAE900A4DA78 /* Label Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				113CA0122AB4FB3300A4DA78 /* LabelStorageHelpers.swift */,
+			);
+			path = "Label Configuration";
+			sourceTree = "<group>";
+		};
+		113CA0142AB51B2900A4DA78 /* Generate Labels */ = {
+			isa = PBXGroup;
+			children = (
+				113CA0152AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift */,
+				113CA0172AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift */,
+				113CA0192AB51B8400A4DA78 /* Extensions */,
+			);
+			path = "Generate Labels";
+			sourceTree = "<group>";
+		};
+		113CA0192AB51B8400A4DA78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				113CA01A2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift */,
+				113CA01C2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift */,
+				11C251322ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift */,
+				113CA0252AB6095B00A4DA78 /* CopyLabels.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		113CA0202AB51E9600A4DA78 /* Cell Components */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FDD2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift */,
+			);
+			path = "Cell Components";
+			sourceTree = "<group>";
+		};
+		11C251242ACBC1F600CF7F5A /* Symbol Button */ = {
+			isa = PBXGroup;
+			children = (
+				11C251252ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift */,
+				11C251272ACCCE7E00CF7F5A /* SymbolButtonTableViewDataSource.swift */,
+				11C251292ACCCE8500CF7F5A /* Extensions */,
+			);
+			path = "Symbol Button";
+			sourceTree = "<group>";
+		};
+		11C251292ACCCE8500CF7F5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11C2512A2ACCCEAB00CF7F5A /* SymbolButtonTableViewCellSelection.swift */,
+				11C2512C2ACCCEC700CF7F5A /* SymbolButtonTableViewSizeConfiguration.swift */,
+				11C2512E2ACCCED700CF7F5A /* SymbolButtonTableViewHeadersAndFooters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */,
+				112062902AEC837500E72445 /* UniversalTextEntryDataSource.swift */,
+			);
+			path = "Universal Table View Protocols";
+			sourceTree = "<group>";
+		};
+		5E1FB9B72AB0FFE600CE9458 /* Protocols and Templates */ = {
+			isa = PBXGroup;
+			children = (
+				113C9FDA2AB377C100A4DA78 /* Universal Table View Configuration Templates */,
+				5E1FB9B62AB0FFA300CE9458 /* Universal Table View Protocols */,
+			);
+			path = "Protocols and Templates";
+			sourceTree = "<group>";
+		};
+		5ECEC8142A9ADBDE00535B42 = {
+			isa = PBXGroup;
+			children = (
+				5ECEC81F2A9ADBDE00535B42 /* The User Input Label Maker */,
+				5ECEC8362A9ADBDF00535B42 /* The User Input Label MakerTests */,
+				5ECEC8402A9ADBDF00535B42 /* The User Input Label MakerUITests */,
+				5ECEC81E2A9ADBDE00535B42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ECEC81E2A9ADBDE00535B42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */,
+				5ECEC8332A9ADBDF00535B42 /* The User Input Label MakerTests.xctest */,
+				5ECEC83D2A9ADBDF00535B42 /* The User Input Label MakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ECEC81F2A9ADBDE00535B42 /* The User Input Label Maker */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */,
+				5ECEC8222A9ADBDE00535B42 /* SceneDelegate.swift */,
+				113CA00E2AB4F2E000A4DA78 /* Models */,
+				5ECEC86C2AAFAD9500535B42 /* Screens */,
+				5ECEC86D2AAFAE6300535B42 /* Custom Cells */,
+				113C9FEC2AB394EE00A4DA78 /* Cell Registration */,
+				5ECEC8692AAFABCC00535B42 /* Cell and Navigation Bar Configuration */,
+				5E1FB9B72AB0FFE600CE9458 /* Protocols and Templates */,
+				5ECEC8662AAFA62E00535B42 /* Utilities */,
+				113CA0112AB4FAE900A4DA78 /* Label Configuration */,
+				5ECEC8262A9ADBDE00535B42 /* Main.storyboard */,
+				5ECEC8292A9ADBDF00535B42 /* Assets.xcassets */,
+				5ECEC8742AAFB24900535B42 /* ThemeColors.xcassets */,
+				5ECEC82B2A9ADBDF00535B42 /* LaunchScreen.storyboard */,
+				5ECEC82E2A9ADBDF00535B42 /* Info.plist */,
+			);
+			path = "The User Input Label Maker";
+			sourceTree = "<group>";
+		};
+		5ECEC8362A9ADBDF00535B42 /* The User Input Label MakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8372A9ADBDF00535B42 /* The_User_Input_Label_MakerTests.swift */,
+			);
+			path = "The User Input Label MakerTests";
+			sourceTree = "<group>";
+		};
+		5ECEC8402A9ADBDF00535B42 /* The User Input Label MakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8412A9ADBDF00535B42 /* The_User_Input_Label_MakerUITests.swift */,
+				5ECEC8432A9ADBDF00535B42 /* The_User_Input_Label_MakerUITestsLaunchTests.swift */,
+			);
+			path = "The User Input Label MakerUITests";
+			sourceTree = "<group>";
+		};
+		5ECEC8652AAFA5F400535B42 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8242A9ADBDE00535B42 /* MainTableViewController.swift */,
+				5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */,
+				113C9FFA2AB4BD8500A4DA78 /* Extensions */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5ECEC8662AAFA62E00535B42 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8672AAFA65B00535B42 /* FontKit.swift */,
+				5ECEC8722AAFB15500535B42 /* ThemeColorKit.swift */,
+				5ECEC87F2AAFCC3000535B42 /* SFSymbolKit.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5ECEC8692AAFABCC00535B42 /* Cell and Navigation Bar Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC86A2AAFAD6900535B42 /* TableViewCellContentConfigurations.swift */,
+				5ECEC87D2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift */,
+				11C251302ACCD2B800CF7F5A /* ReusableCellConfigurationHelpers.swift */,
+			);
+			path = "Cell and Navigation Bar Configuration";
+			sourceTree = "<group>";
+		};
+		5ECEC86C2AAFAD9500535B42 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8652AAFA5F400535B42 /* Main */,
+				113C9FDF2AB3869100A4DA78 /* Button or Segmented Control */,
+				113CA0022AB4C8BD00A4DA78 /* Text Button */,
+				11C251242ACBC1F600CF7F5A /* Symbol Button */,
+				113025C82ADCADF3008C1C6F /* Slider, Switch, or Stepper */,
+				113025D42AE0B709008C1C6F /* Text Field */,
+				113CA0142AB51B2900A4DA78 /* Generate Labels */,
+				113025E02AE0C078008C1C6F /* User Input Label Tips */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5ECEC86D2AAFAE6300535B42 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8782AAFBA9E00535B42 /* Header Footer Views */,
+				5ECEC8772AAFBA9500535B42 /* Table View Cells */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		5ECEC8772AAFBA9500535B42 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC86E2AAFAEB500535B42 /* PlainTableViewCell.swift */,
+				5ECEC8702AAFAEF300535B42 /* DisclosureTableViewCell.swift */,
+				5ECEC87B2AAFBCA800535B42 /* TextFieldTableViewCell.swift */,
+				113CA0212AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift */,
+				113CA0202AB51E9600A4DA78 /* Cell Components */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		5ECEC8782AAFBA9E00535B42 /* Header Footer Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEC8792AAFBAD800535B42 /* HeaderFooterView.swift */,
+			);
+			path = "Header Footer Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ECEC81C2A9ADBDE00535B42 /* The User Input Label Maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ECEC8472A9ADBDF00535B42 /* Build configuration list for PBXNativeTarget "The User Input Label Maker" */;
+			buildPhases = (
+				5ECEC8192A9ADBDE00535B42 /* Sources */,
+				5ECEC81A2A9ADBDE00535B42 /* Frameworks */,
+				5ECEC81B2A9ADBDE00535B42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The User Input Label Maker";
+			productName = "The User Input Label Maker";
+			productReference = 5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ECEC8322A9ADBDF00535B42 /* The User Input Label MakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ECEC84A2A9ADBDF00535B42 /* Build configuration list for PBXNativeTarget "The User Input Label MakerTests" */;
+			buildPhases = (
+				5ECEC82F2A9ADBDF00535B42 /* Sources */,
+				5ECEC8302A9ADBDF00535B42 /* Frameworks */,
+				5ECEC8312A9ADBDF00535B42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ECEC8352A9ADBDF00535B42 /* PBXTargetDependency */,
+			);
+			name = "The User Input Label MakerTests";
+			productName = "The User Input Label MakerTests";
+			productReference = 5ECEC8332A9ADBDF00535B42 /* The User Input Label MakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5ECEC83C2A9ADBDF00535B42 /* The User Input Label MakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ECEC84D2A9ADBDF00535B42 /* Build configuration list for PBXNativeTarget "The User Input Label MakerUITests" */;
+			buildPhases = (
+				5ECEC8392A9ADBDF00535B42 /* Sources */,
+				5ECEC83A2A9ADBDF00535B42 /* Frameworks */,
+				5ECEC83B2A9ADBDF00535B42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ECEC83F2A9ADBDF00535B42 /* PBXTargetDependency */,
+			);
+			name = "The User Input Label MakerUITests";
+			productName = "The User Input Label MakerUITests";
+			productReference = 5ECEC83D2A9ADBDF00535B42 /* The User Input Label MakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ECEC8152A9ADBDE00535B42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5ECEC81C2A9ADBDE00535B42 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5ECEC8322A9ADBDF00535B42 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5ECEC81C2A9ADBDE00535B42;
+					};
+					5ECEC83C2A9ADBDF00535B42 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5ECEC81C2A9ADBDE00535B42;
+					};
+				};
+			};
+			buildConfigurationList = 5ECEC8182A9ADBDE00535B42 /* Build configuration list for PBXProject "The User Input Label Maker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5ECEC8142A9ADBDE00535B42;
+			productRefGroup = 5ECEC81E2A9ADBDE00535B42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ECEC81C2A9ADBDE00535B42 /* The User Input Label Maker */,
+				5ECEC8322A9ADBDF00535B42 /* The User Input Label MakerTests */,
+				5ECEC83C2A9ADBDF00535B42 /* The User Input Label MakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ECEC81B2A9ADBDE00535B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECEC82D2A9ADBDF00535B42 /* LaunchScreen.storyboard in Resources */,
+				5ECEC8752AAFB24900535B42 /* ThemeColors.xcassets in Resources */,
+				5ECEC82A2A9ADBDF00535B42 /* Assets.xcassets in Resources */,
+				5ECEC8282A9ADBDE00535B42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECEC8312A9ADBDF00535B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECEC83B2A9ADBDF00535B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ECEC8192A9ADBDE00535B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113025CF2ADCAEF0008C1C6F /* SliderSwitchOrStepperTableViewControllerCellSelection.swift in Sources */,
+				113CA0132AB4FB3300A4DA78 /* LabelStorageHelpers.swift in Sources */,
+				113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */,
+				113025D32ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift in Sources */,
+				113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */,
+				112062912AEC837500E72445 /* UniversalTextEntryDataSource.swift in Sources */,
+				113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */,
+				113025E42AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift in Sources */,
+				113CA0162AB51B6400A4DA78 /* GenerateLabelsTableViewController.swift in Sources */,
+				113025DB2AE0B771008C1C6F /* TextFieldTableViewControllerCellSelection.swift in Sources */,
+				5ECEC8732AAFB15500535B42 /* ThemeColorKit.swift in Sources */,
+				113CA01B2AB51BB400A4DA78 /* GenerateLabelsTableViewCellSelection.swift in Sources */,
+				113CA0012AB4C00A00A4DA78 /* ButtonOrSegmentedControlTableViewControllerSizeConfiguration.swift in Sources */,
+				113C9FEB2AB394AF00A4DA78 /* CellViewType.swift in Sources */,
+				113025CA2ADCAE9D008C1C6F /* SliderSwitchOrStepperTableViewController.swift in Sources */,
+				5ECEC86F2AAFAEB500535B42 /* PlainTableViewCell.swift in Sources */,
+				5ECEC8712AAFAEF300535B42 /* DisclosureTableViewCell.swift in Sources */,
+				5ECEC8252A9ADBDE00535B42 /* MainTableViewController.swift in Sources */,
+				113C9FDC2AB3783B00A4DA78 /* UniversalTableView.swift in Sources */,
+				113025DD2AE0B78F008C1C6F /* TextFieldTableViewControllerSizeConfiguration.swift in Sources */,
+				5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */,
+				113CA00B2AB4CAA400A4DA78 /* TextButtonTableViewSizeConfiguration.swift in Sources */,
+				5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */,
+				113C9FFF2AB4BFFC00A4DA78 /* ButtonOrSegmentedControlTableViewControllerHeadersAndFooters.swift in Sources */,
+				113025E92AE0C0F8008C1C6F /* TipsTableViewControllerSizeConfiguration.swift in Sources */,
+				5ECEC86B2AAFAD6900535B42 /* TableViewCellContentConfigurations.swift in Sources */,
+				113C9FE72AB388BB00A4DA78 /* UniversalTableViewController.swift in Sources */,
+				113CA01D2AB51BCA00A4DA78 /* GenerateLabelsTableViewSizeConfiguration.swift in Sources */,
+				113C9FF72AB4BD4500A4DA78 /* MainTableViewControllerSizeConfiguration.swift in Sources */,
+				113025DF2AE0B7AA008C1C6F /* TextFieldTableViewControllerHeadersAndFooters.swift in Sources */,
+				113025D82AE0B74F008C1C6F /* TextFieldTableViewControllerDataSource.swift in Sources */,
+				113C9FDE2AB380C300A4DA78 /* UniversalSelectionStateBackgroundView.swift in Sources */,
+				5ECEC87A2AAFBAD800535B42 /* HeaderFooterView.swift in Sources */,
+				11C2512B2ACCCEAB00CF7F5A /* SymbolButtonTableViewCellSelection.swift in Sources */,
+				113C9FF92AB4BD7400A4DA78 /* MainTableViewControllerHeadersAndFooters.swift in Sources */,
+				5ECEC8232A9ADBDE00535B42 /* SceneDelegate.swift in Sources */,
+				113C9FE12AB386E900A4DA78 /* ButtonOrSegmentedControlTableViewController.swift in Sources */,
+				11C251332ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift in Sources */,
+				113CA0102AB4F34100A4DA78 /* LabelsBundle.swift in Sources */,
+				5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */,
+				5ECEC87E2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift in Sources */,
+				113C9FFD2AB4BFEA00A4DA78 /* ButtonOrSegmentedControlTableViewControllerCellSelection.swift in Sources */,
+				113C9FF52AB4BD3500A4DA78 /* MainTableViewControllerCellSelection.swift in Sources */,
+				113025D62AE0B738008C1C6F /* TextFieldTableViewController.swift in Sources */,
+				11C251282ACCCE7E00CF7F5A /* SymbolButtonTableViewDataSource.swift in Sources */,
+				5ECEC8682AAFA65B00535B42 /* FontKit.swift in Sources */,
+				113CA00D2AB4CAC100A4DA78 /* TextButtonTableViewHeadersAndFooters.swift in Sources */,
+				113C9FE92AB390DE00A4DA78 /* CellRegistrationHelpers.swift in Sources */,
+				113025D12ADCAF02008C1C6F /* SliderSwitchOrStepperTableViewControllerSizeConfiguration.swift in Sources */,
+				113CA0062AB4C91F00A4DA78 /* TextButtonTableViewDataSource.swift in Sources */,
+				113025E22AE0C0C1008C1C6F /* TipsTableViewController.swift in Sources */,
+				5ECEC87C2AAFBCA800535B42 /* TextFieldTableViewCell.swift in Sources */,
+				113025CC2ADCAEAF008C1C6F /* SliderSwitchOrStepperTableViewDataSource.swift in Sources */,
+				11C251312ACCD2B800CF7F5A /* ReusableCellConfigurationHelpers.swift in Sources */,
+				113CA0042AB4C90700A4DA78 /* TextButtonTableViewController.swift in Sources */,
+				11C251262ACCCE5300CF7F5A /* SymbolButtonTableViewController.swift in Sources */,
+				113025E72AE0C0E6008C1C6F /* TipsTableViewControllerCellSelection.swift in Sources */,
+				11C2512D2ACCCEC700CF7F5A /* SymbolButtonTableViewSizeConfiguration.swift in Sources */,
+				113CA0222AB51EE200A4DA78 /* MultilineTextViewTableViewCell.swift in Sources */,
+				113CA0262AB6095B00A4DA78 /* CopyLabels.swift in Sources */,
+				11C2512F2ACCCED700CF7F5A /* SymbolButtonTableViewHeadersAndFooters.swift in Sources */,
+				5ECEC8802AAFCC3000535B42 /* SFSymbolKit.swift in Sources */,
+				113025EB2AE0C10A008C1C6F /* TipsTableViewControllerHeadersAndFooters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECEC82F2A9ADBDF00535B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECEC8382A9ADBDF00535B42 /* The_User_Input_Label_MakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECEC8392A9ADBDF00535B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECEC8442A9ADBDF00535B42 /* The_User_Input_Label_MakerUITestsLaunchTests.swift in Sources */,
+				5ECEC8422A9ADBDF00535B42 /* The_User_Input_Label_MakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ECEC8352A9ADBDF00535B42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ECEC81C2A9ADBDE00535B42 /* The User Input Label Maker */;
+			targetProxy = 5ECEC8342A9ADBDF00535B42 /* PBXContainerItemProxy */;
+		};
+		5ECEC83F2A9ADBDF00535B42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ECEC81C2A9ADBDE00535B42 /* The User Input Label Maker */;
+			targetProxy = 5ECEC83E2A9ADBDF00535B42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5ECEC8262A9ADBDE00535B42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ECEC8272A9ADBDE00535B42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5ECEC82B2A9ADBDF00535B42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5ECEC82C2A9ADBDF00535B42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5ECEC8452A9ADBDF00535B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5ECEC8462A9ADBDF00535B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ECEC8482A9ADBDF00535B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39JVNC347T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The User Input Label Maker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pumpkintoss.UserInputLabelMaker.The-User-Input-Label-Maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ECEC8492A9ADBDF00535B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39JVNC347T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The User Input Label Maker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pumpkintoss.UserInputLabelMaker.The-User-Input-Label-Maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5ECEC84B2A9ADBDF00535B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPFNDCJUS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pumpkintoss.UserInputLabelMaker.The-User-Input-Label-MakerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The User Input Label Maker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/The User Input Label Maker";
+			};
+			name = Debug;
+		};
+		5ECEC84C2A9ADBDF00535B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPFNDCJUS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pumpkintoss.UserInputLabelMaker.The-User-Input-Label-MakerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The User Input Label Maker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/The User Input Label Maker";
+			};
+			name = Release;
+		};
+		5ECEC84E2A9ADBDF00535B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPFNDCJUS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pumpkintoss.UserInputLabelMaker.The-User-Input-Label-MakerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The User Input Label Maker";
+			};
+			name = Debug;
+		};
+		5ECEC84F2A9ADBDF00535B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RPFNDCJUS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pumpkintoss.UserInputLabelMaker.The-User-Input-Label-MakerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The User Input Label Maker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ECEC8182A9ADBDE00535B42 /* Build configuration list for PBXProject "The User Input Label Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECEC8452A9ADBDF00535B42 /* Debug */,
+				5ECEC8462A9ADBDF00535B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ECEC8472A9ADBDF00535B42 /* Build configuration list for PBXNativeTarget "The User Input Label Maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECEC8482A9ADBDF00535B42 /* Debug */,
+				5ECEC8492A9ADBDF00535B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ECEC84A2A9ADBDF00535B42 /* Build configuration list for PBXNativeTarget "The User Input Label MakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECEC84B2A9ADBDF00535B42 /* Debug */,
+				5ECEC84C2A9ADBDF00535B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ECEC84D2A9ADBDF00535B42 /* Build configuration list for PBXNativeTarget "The User Input Label MakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECEC84E2A9ADBDF00535B42 /* Debug */,
+				5ECEC84F2A9ADBDF00535B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ECEC8152A9ADBDE00535B42 /* Project object */;
+}
