@@ -21,7 +21,7 @@ extension SymbolButtonTableViewController {
         case 1:
             headerFooterView.label.text = "LITERAL SYMBOL NAME"
         case 2:
-            headerFooterView.label.text = "COMMON ALTERNATE NAMES"
+            headerFooterView.label.text = "COMMON ALTERNATE NAME"
         default:
             return nil
         }
@@ -33,7 +33,7 @@ extension SymbolButtonTableViewController {
         case 1:
             headerFooterView.accessibilityLabel = "Literal Symbol Name"
         case 2:
-            headerFooterView.accessibilityLabel = "Common Alternate Names"
+            headerFooterView.accessibilityLabel = "Common Alternate Name"
         default:
             return nil
         }
