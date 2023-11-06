@@ -52,6 +52,9 @@ class MainTableViewDataSource: NSObject, UniversalTableViewDataSource {
         // Configure cell content
         cell.contentConfiguration = TableViewCellContentConfigurations.basicButtonCell(withText: textContent)
         
+        // Configure automation identifiers
+        cell.accessibilityIdentifier = textContent
+        
         // Configure accessibility label
         cell.accessibilityLabel = textContent
         

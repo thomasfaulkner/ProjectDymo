@@ -22,12 +22,57 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testButtonOrSegmentedControlLaunchesVC() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        app.launchArguments = ["enable-testing"]
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        app.tables["User Input Label Maker"].cells["Button or Segmented Control"].tap()
+        
+        let tableIndentifierAfterTap = app.tables.firstMatch.identifier
+        let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
+        
+        XCTAssertTrue(tableIndentifierAfterTap == "Button or Segmented Control", errorMessage)
+    }
+    
+    func testSliderSwitchOrStepperLaunchesVC() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["enable-testing"]
+        app.launch()
+        
+        app.tables["User Input Label Maker"].cells["Slider, Switch, or Stepper"].tap()
+        
+        let tableIndentifierAfterTap = app.tables.firstMatch.identifier
+        let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
+        
+        XCTAssertTrue(tableIndentifierAfterTap == "Slider, Switch, or Stepper", errorMessage)
+    }
+    
+    func testTextFieldLaunchesVC() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["enable-testing"]
+        app.launch()
+        
+        app.tables["User Input Label Maker"].cells["Text Field"].tap()
+        
+        let tableIndentifierAfterTap = app.tables.firstMatch.identifier
+        let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
+        
+        XCTAssertTrue(tableIndentifierAfterTap == "Text Field", errorMessage)
+    }
+    
+    func testUserInputLabelTipsLaunchesVC() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["enable-testing"]
+        app.launch()
+        
+        app.tables["User Input Label Maker"].cells["User Input Label Tips"].tap()
+        
+        let tableIndentifierAfterTap = app.tables.firstMatch.identifier
+        let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
+        
+        XCTAssertTrue(tableIndentifierAfterTap == "User Input Label Tips", errorMessage)
     }
 
     func testLaunchPerformance() throws {
