@@ -61,6 +61,27 @@ class MainTableViewDataSource: NSObject, UniversalTableViewDataSource {
         // Mark all cells as Buttons for accessibility tools
         cell.accessibilityTraits = [.button]
         
+        // Configure accessibility user input labels
+        cell.accessibilityUserInputLabels = {
+            switch indexPath.section {
+            case 0:
+                switch indexPath.row {
+                case 0:
+                    return [textContent, "Button"]
+                case 1:
+                    return [textContent, "Slider"]
+                case 2:
+                    return [textContent]
+                default:
+                    return [textContent]
+                }
+            case 1:
+                return [textContent, "Tips"]
+            default:
+                return [textContent]
+            }
+        }()
+        
         return cell
     }
 }
