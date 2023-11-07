@@ -40,6 +40,10 @@ class GenerateLabelsTableViewDataSource: NSObject, UniversalTableViewDataSource 
             
             let textContent = "📋 Copy Labels"
             
+            /// This is the only Plain cell that should change appearance on selection, as it behaves like a button but does not require a disclosure indicator
+            // Replace .none selection style from PlainTableViewCell with .default
+            cell.selectionStyle = .default
+            
             // Configure cell content
             cell.contentConfiguration = TableViewCellContentConfigurations.basicButtonCell(withText: textContent)
             
