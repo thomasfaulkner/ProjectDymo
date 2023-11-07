@@ -20,6 +20,9 @@ class TipsTableViewController: UniversalTableViewController {
         // Configure table view data source
         tableView.dataSource = dataSource
         
+        // Configure automation identifier
+        tableView.accessibilityIdentifier = title
+        
         // Register cells and header/footer views
         CellRegistrationHelpers.registerCellsAndViews(forTableView: tableView, withCellViewTypes: [.plain, .headerFooterView])
     }
