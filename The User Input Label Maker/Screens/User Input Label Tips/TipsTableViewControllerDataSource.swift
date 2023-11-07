@@ -49,7 +49,11 @@ class TipsTableViewControllerDataSource: NSObject, UniversalTableViewDataSource 
         // Configure accessibility label
         cell.accessibilityLabel = textContent
         
-        // No accessibility traits to configure for these cells
+        // These cells are not interactive and should not be given Voice Control labels
+        cell.accessibilityUserInputLabels = [""]
+        
+        // All cells are static text; configure staticText trait
+        cell.accessibilityTraits = [.staticText]
         
         return cell
     }
