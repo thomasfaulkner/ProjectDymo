@@ -58,7 +58,6 @@
 		11C251332ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C251322ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift */; };
 		5E1FB9AF2AB0C78700CE9458 /* UniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */; };
 		5E1FB9B52AB0FF4D00CE9458 /* MainTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */; };
-		5E96B66E2B180C79004950C7 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96B66D2B180C79004950C7 /* Test.swift */; };
 		5ECEC8212A9ADBDE00535B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */; };
 		5ECEC8232A9ADBDE00535B42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8222A9ADBDE00535B42 /* SceneDelegate.swift */; };
 		5ECEC8252A9ADBDE00535B42 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC8242A9ADBDE00535B42 /* MainTableViewController.swift */; };
@@ -149,7 +148,6 @@
 		11C251322ACCE7CA00CF7F5A /* GenerateLabelsTableViewHeadersAndFooters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateLabelsTableViewHeadersAndFooters.swift; sourceTree = "<group>"; };
 		5E1FB9AE2AB0C78700CE9458 /* UniversalTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalTableViewDataSource.swift; sourceTree = "<group>"; };
 		5E1FB9B42AB0FF4D00CE9458 /* MainTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewDataSource.swift; sourceTree = "<group>"; };
-		5E96B66D2B180C79004950C7 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		5ECEC81D2A9ADBDE00535B42 /* The User Input Label Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The User Input Label Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECEC8202A9ADBDE00535B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ECEC8222A9ADBDE00535B42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -449,7 +447,6 @@
 				5ECEC8742AAFB24900535B42 /* ThemeColors.xcassets */,
 				5ECEC82B2A9ADBDF00535B42 /* LaunchScreen.storyboard */,
 				5ECEC82E2A9ADBDF00535B42 /* Info.plist */,
-				5E96B66D2B180C79004950C7 /* Test.swift */,
 			);
 			path = "The User Input Label Maker";
 			sourceTree = "<group>";
@@ -682,7 +679,6 @@
 				113C9FE52AB3878200A4DA78 /* ButtonOrSegmentedControlTableViewDataSource.swift in Sources */,
 				113025D32ADCAF15008C1C6F /* SliderSwitchOrStepperTableViewControllerHeadersAndFooters.swift in Sources */,
 				113CA0182AB51B7A00A4DA78 /* GenerateLabelsTableViewDataSource.swift in Sources */,
-				5E96B66E2B180C79004950C7 /* Test.swift in Sources */,
 				112062912AEC837500E72445 /* UniversalTextEntryDataSource.swift in Sources */,
 				113CA0092AB4CA7700A4DA78 /* TextButtonTableViewCellSelection.swift in Sources */,
 				113025E42AE0C0D1008C1C6F /* TipsTableViewControllerDataSource.swift in Sources */,
