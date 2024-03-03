@@ -79,6 +79,24 @@ final class The_User_Input_Label_MakerTests: XCTestCase {
         let expectedResult = ["Hello", "world!"]
         XCTAssertEqual(labelsBundle.formattedArray, expectedResult, "Formatted array should remove any empty strings from the given array.")
     }
+    
+    func test_StringDictionary_WhenPassedToMakeLabelsBundle_ReturnsLabelsBundleSortedInAscendingOrderByIndexPath() throws {
+        // Given
+        let sut: [IndexPath: String] = [
+            IndexPath(row: 0, section: 1): "rain",
+            IndexPath(row: 0, section: 0): "The",
+            IndexPath(row: 1, section: 1): "in",
+            IndexPath(row: 0, section: 2): "Spain"
+        ]
+        
+        // When
+        let labelsBundle = LabelStorageHelpers.makeLabelsBundle(fromStringDictionary: sut)
+        
+        // Then
+        let sortedArray = ["The", "rain", "in", "Spain"]
+        let expectedResult = LabelsBundle(array: sortedArray)
+        XCTAssertEqual(labelsBundle, expectedResult, "makeLabelsBundle(fromStringDictionary:) should return a LabelsBundle() object containing a string array. The string array should be sorted in ascending order by each string's respective index path passed in from the dictionary parameter.")
+    }
 
 //    func testPerformanceExample() throws {
 //        // This is an example of a performance test case.
