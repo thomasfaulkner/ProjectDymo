@@ -55,6 +55,18 @@ final class The_User_Input_Label_MakerTests: XCTestCase {
         // Then
         XCTAssertEqual(labelsBundle.array, sut, "Array stored in LabelsBundle object should match string array assigned initially.")
     }
+    
+    func test_LabelsBundle_WhenQueriedForFormattedArray_ReturnsStringsWithoutWhitespaceAndNewlines() throws {
+        // Given
+        let sut = ["The     ", "     rain", "in\n", "\nSpain..."]
+        
+        // When
+        let labelsBundle = LabelsBundle(array: sut)
+        
+        // Then
+        let expectedResult = ["The", "rain", "in", "Spain..."]
+        XCTAssertEqual(labelsBundle.formattedArray, expectedResult, "Formatted array should trim all whitespace and newlines from stored strings.")
+    }
 
 //    func testPerformanceExample() throws {
 //        // This is an example of a performance test case.
