@@ -18,7 +18,7 @@ final class The_User_Input_Label_MakerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func test_TextFieldCell_WhenAssignedText_StoresReadableText() throws {
+    func test_TextFieldCell_WhenAssignedText_StoresAccurateText() throws {
         // Given
         let sut = TextFieldTableViewCell()
         
@@ -26,7 +26,19 @@ final class The_User_Input_Label_MakerTests: XCTestCase {
         sut.textField.text = "Sample text"
         
         // Then
-        XCTAssertEqual(sut.textField.text, "Sample text", "Text field text does not match text assigned initially.")
+        XCTAssertEqual(sut.textField.text, "Sample text", "Text field text should match text assigned initially.")
+    }
+    
+    func test_TextFieldCell_WhenQueriedByTextFromField_ReturnsCorrectString() throws {
+        // Given
+        let sut = TextFieldTableViewCell()
+        sut.textField.text = "Sample text"
+        
+        // When
+        let textFieldContents = LabelStorageHelpers.textFromField(inCell: sut)!
+        
+        // Then
+        XCTAssertEqual(textFieldContents, "Sample text", "Text retrieved by textFromField(inCell:) should match text assigned initially.")
     }
 
 //    func testPerformanceExample() throws {
