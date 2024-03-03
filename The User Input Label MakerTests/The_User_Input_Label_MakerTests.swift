@@ -97,6 +97,17 @@ final class The_User_Input_Label_MakerTests: XCTestCase {
         let expectedResult = LabelsBundle(array: sortedArray)
         XCTAssertEqual(labelsBundle, expectedResult, "makeLabelsBundle(fromStringDictionary:) should return a LabelsBundle() object containing a string array. The string array should be sorted in ascending order by each string's respective index path passed in from the dictionary parameter.")
     }
+    
+    func test_EmptyStringDictionary_WhenPassedToMakeLabelsBundle_ReturnsLabelsBundleWithEmptyStringDictionary() throws {
+        // Given
+        let sut: [IndexPath: String] = [:]
+        
+        // When
+        let labelsBundle = LabelStorageHelpers.makeLabelsBundle(fromStringDictionary: sut)
+        
+        // Then
+        XCTAssertEqual(labelsBundle, LabelsBundle(array: [String]()), "When passed an empty string dictionary, makeLabelsBundle(fromDictionary:) should return a LabelsBundle() object with an empty string array.")
+    }
 
 //    func testPerformanceExample() throws {
 //        // This is an example of a performance test case.
