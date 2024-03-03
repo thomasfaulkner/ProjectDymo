@@ -17,7 +17,9 @@ final class The_User_Input_Label_MakerTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
+    // MARK: - Tests for Text Field Cell and Related Functions
+    
     func test_TextFieldCell_WhenAssignedText_StoresAccurateText() throws {
         // Given
         let sut = TextFieldTableViewCell()
@@ -39,6 +41,19 @@ final class The_User_Input_Label_MakerTests: XCTestCase {
         
         // Then
         XCTAssertEqual(textFieldContents, "Sample text", "Text retrieved by textFromField(inCell:) should match text assigned initially.")
+    }
+    
+    // MARK: - Tests for LabelsBundle and Related Functions
+    
+    func test_LabelsBundle_WhenAskedToStoreStringArray_AccuratelyStoresStringArray() throws {
+        // Given
+        let sut = ["Hello", "world!"]
+        
+        // When
+        let labelsBundle = LabelsBundle(array: sut)
+        
+        // Then
+        XCTAssertEqual(labelsBundle.array, sut, "Array stored in LabelsBundle object should match string array assigned initially.")
     }
 
 //    func testPerformanceExample() throws {
