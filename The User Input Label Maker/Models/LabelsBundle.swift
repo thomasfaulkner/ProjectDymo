@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LabelsBundle {
+struct LabelsBundle: Equatable {
     var array: [String]
     
     // Get-only property; strings should only be added or removed from .array

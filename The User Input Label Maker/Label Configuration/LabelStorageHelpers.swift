@@ -26,7 +26,7 @@ struct LabelStorageHelpers {
     static func makeLabelsBundle(fromStringDictionary stringDictionary: [IndexPath : String]) -> LabelsBundle {
         print("Here's the string dictionary I'm making a labels bundle from: \(stringDictionary)")
         
-        // Sort dictionary by (key) indexPath from lowest to highest, because the text fields on a page are ordered from most to least important.
+        // Sort dictionary by key (indexPath) from lowest to highest, because the text fields on a page are ordered from most to least important.
         // This is important for the labels bundle, because a User Input Labels array is accessed in order of priority starting at index 0.
         let sortedDictionaryArray = stringDictionary.sorted {
             $0.0 < $1.0
