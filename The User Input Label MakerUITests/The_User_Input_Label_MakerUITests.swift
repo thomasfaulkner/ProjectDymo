@@ -103,6 +103,21 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         XCTAssertEqual(tableIndentifierAfterTap, "Text", errorMessage)
     }
     
+    func test_SymbolOnly_WhenTapped_LaunchesVC() throws {
+        // Given
+        navigateToButtonOrSegmentedControlTVC()
+        
+        // When
+        let app = XCUIApplication()
+        app.tables["Button or Segmented Control"].cells["Symbol Only"].tap()
+        
+        // Then
+        let tableIndentifierAfterTap = app.tables.firstMatch.identifier
+        let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
+        
+        XCTAssertEqual(tableIndentifierAfterTap, "Symbol Only", errorMessage)
+    }
+    
     // MARK: - Launch Performance test, to be reenabled as needed
 //    func testLaunchPerformance() throws {
 //        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
