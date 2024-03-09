@@ -34,7 +34,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
-        XCTAssertTrue(tableIndentifierAfterTap == "Button or Segmented Control", errorMessage)
+        XCTAssertEqual(tableIndentifierAfterTap,"Button or Segmented Control", errorMessage)
     }
     
     func test_SliderSwitchOrStepper_WhenTapped_LaunchesVC() throws {
@@ -47,7 +47,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
-        XCTAssertTrue(tableIndentifierAfterTap == "Slider, Switch, or Stepper", errorMessage)
+        XCTAssertEqual(tableIndentifierAfterTap, "Slider, Switch, or Stepper", errorMessage)
     }
     
     func test_TextField_WhenTapped_LaunchesVC() throws {
@@ -60,7 +60,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
-        XCTAssertTrue(tableIndentifierAfterTap == "Text Field", errorMessage)
+        XCTAssertEqual(tableIndentifierAfterTap, "Text Field", errorMessage)
     }
     
     func test_UserInputLabelTips_WhenTapped_LaunchesVC() throws {
@@ -73,7 +73,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
-        XCTAssertTrue(tableIndentifierAfterTap == "User Input Label Tips", errorMessage)
+        XCTAssertEqual(tableIndentifierAfterTap, "User Input Label Tips", errorMessage)
     }
     
     // MARK: - Button or Segmented Control TVC UI Tests
