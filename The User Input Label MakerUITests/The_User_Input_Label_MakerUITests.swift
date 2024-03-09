@@ -22,7 +22,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testButtonOrSegmentedControlLaunchesVC() throws {
+    func test_ButtonOrSegmentedControl_WhenTapped_LaunchesVC() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
@@ -36,7 +36,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         XCTAssertTrue(tableIndentifierAfterTap == "Button or Segmented Control", errorMessage)
     }
     
-    func testSliderSwitchOrStepperLaunchesVC() throws {
+    func test_SliderSwitchOrStepper_WhenTapped_LaunchesVC() throws {
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
@@ -49,7 +49,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         XCTAssertTrue(tableIndentifierAfterTap == "Slider, Switch, or Stepper", errorMessage)
     }
     
-    func testTextFieldLaunchesVC() throws {
+    func test_TextField_WhenTapped_LaunchesVC() throws {
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
@@ -62,7 +62,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         XCTAssertTrue(tableIndentifierAfterTap == "Text Field", errorMessage)
     }
     
-    func testUserInputLabelTipsLaunchesVC() throws {
+    func test_UserInputLabelTips_WhenTapped_LaunchesVC() throws {
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
@@ -74,13 +74,14 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         
         XCTAssertTrue(tableIndentifierAfterTap == "User Input Label Tips", errorMessage)
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+    
+    // MARK: - Launch Performance test, to be reenabled as needed
+//    func testLaunchPerformance() throws {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTApplicationLaunchMetric()]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
 }
