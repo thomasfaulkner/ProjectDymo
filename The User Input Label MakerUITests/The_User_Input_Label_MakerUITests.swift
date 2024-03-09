@@ -22,8 +22,9 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    // MARK: - Main TVC UI Tests
+    
     func test_ButtonOrSegmentedControl_WhenTapped_LaunchesVC() throws {
-        // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
@@ -73,6 +74,33 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
         XCTAssertTrue(tableIndentifierAfterTap == "User Input Label Tips", errorMessage)
+    }
+    
+    // MARK: - Button or Segmented Control TVC UI Tests
+    
+    // Helper Functions
+    func navigateToButtonOrSegmentedControlTVC() {
+        let app = XCUIApplication()
+        app.launchArguments = ["enable-testing"]
+        app.launch()
+        
+        app.tables["User Input Label Maker"].cells["Button or Segmented Control"].tap()
+    }
+    
+    // Core Tests
+    func test_Text_WhenTapped_LaunchesVC() throws {
+        // Given
+        navigateToButtonOrSegmentedControlTVC()
+        
+        // When
+        let app = XCUIApplication()
+        app.tables["Button or Segmented Control"].cells["Text"].tap()
+        
+        // Then
+        let tableIndentifierAfterTap = app.tables.firstMatch.identifier
+        let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
+        
+        XCTAssertEqual(tableIndentifierAfterTap, "Text", errorMessage)
     }
     
     // MARK: - Launch Performance test, to be reenabled as needed
