@@ -118,6 +118,24 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         XCTAssertEqual(tableIndentifierAfterTap, "Symbol Only", errorMessage)
     }
     
+    // MARK: - Text Button TVC UI Tests
+    
+    func navigateToTextButtonTVC() {
+        navigateToButtonOrSegmentedControlTVC()
+        
+        let app = XCUIApplication()
+        app.tables["Button or Segmented Control"].cells["Text"].tap()
+    }
+    
+    func type(text: String, inField fieldName: String, inTable tableName: String) {
+        let app = XCUIApplication()
+        let textField = app.tables[tableName].textFields[fieldName]
+        
+        textField.tap()
+        
+        textField.typeText(text)
+    }
+    
     // MARK: - Launch Performance test, to be reenabled as needed
 //    func testLaunchPerformance() throws {
 //        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
