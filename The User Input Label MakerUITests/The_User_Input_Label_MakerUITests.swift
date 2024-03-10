@@ -127,13 +127,22 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         app.tables["Button or Segmented Control"].cells["Text"].tap()
     }
     
-    func type(text: String, inField fieldName: String, inTable tableName: String) {
+    func test_CheckOutMoreAlbumsField_WhenGivenText_StoresText() throws {
+        navigateToTextButtonTVC()
+        
+        let tableName = "Text"
+        let fieldName = "Check Out More Albums"
+        
         let app = XCUIApplication()
+        // Get correct text field via the cell's automation identifier
         let textField = app.tables[tableName].textFields[fieldName]
         
         textField.tap()
         
-        textField.typeText(text)
+        let sampleText = "Hello, "
+        textField.typeText(sampleText)
+        
+        XCTAssertEqual(textField.value as! String, sampleText)
     }
     
     // MARK: - Launch Performance test, to be reenabled as needed
