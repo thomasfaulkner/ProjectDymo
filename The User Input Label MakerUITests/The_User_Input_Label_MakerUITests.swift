@@ -120,6 +120,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     
     // MARK: - Text Button TVC UI Tests
     
+    // Helper Functions
     func navigateToTextButtonTVC() {
         navigateToButtonOrSegmentedControlTVC()
         
@@ -127,6 +128,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         app.tables["Button or Segmented Control"].cells["Text"].tap()
     }
     
+    // Core Tests
     func test_CheckOutMoreAlbumsField_WhenGivenText_StoresText() throws {
         navigateToTextButtonTVC()
         
