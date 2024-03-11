@@ -144,7 +144,9 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let sampleText = "Hello, "
         textField.typeText(sampleText)
         
-        XCTAssertEqual(textField.value as! String, sampleText)
+        let textFieldContents = textField.value as! String
+        
+        XCTAssertEqual(textFieldContents, sampleText, "Text entered in Check Out More Albums field was not stored correctly.\n- Entered: \(sampleText)\n- Read from field: \(textFieldContents)")
     }
     
     // MARK: - Launch Performance test, to be reenabled as needed
