@@ -128,8 +128,13 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         app.tables["Button or Segmented Control"].cells["Text"].tap()
     }
     
+    // Error Messages
     func textFieldStorageErrorMessage(fieldName: String, sampleText: String, textFieldContents: String) -> String {
         return "Text entered in field \"\(fieldName)\" was not stored correctly.\n- Entered: \(sampleText)\n- Read from field: \(textFieldContents)"
+    }
+    
+    func incorrectFormattedLabelErrorMessage(sampleText: String, expectedResult: String, actualResult: String) -> String {
+        return "Generate Labels did not produce the expected, correctly-formatted label.\n- Text passed in from text field: \(sampleText)\n- Expected label: \(expectedResult)\n- Actual result: \(actualResult)"
     }
     
     // Core Tests
@@ -150,6 +155,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     
     func test_MoreAlbumsField_WhenGivenText_StoresReadableText() throws {
         navigateToTextButtonTVC()
+        
         let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "More Albums")
         
         bundle.textField.tap()
@@ -160,6 +166,26 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let errorMessage = textFieldStorageErrorMessage(fieldName: bundle.fieldName, sampleText: sampleText, textFieldContents: bundle.textFieldContents)
         
         XCTAssertEqual(bundle.textFieldContents, sampleText, errorMessage)
+    }
+    
+    func test_TextInCheckOutMoreAlbumsField_WhenPassedToGenerateLabels_ProducesAccurateUserInputLabel() throws {
+        navigateToTextButtonTVC()
+        
+        let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "Check Out More Albums")
+        
+        bundle.textField.tap()
+        
+        let sampleText = "Hello"
+        bundle.textField.typeText(sampleText)
+        
+        bundle.app.tables[bundle.tableName].cells["Generate Labels"].tap()
+        
+        let textViewContents = bundle.app.tables["Generate Labels"].textViews["Formatted Labels"].value as! String
+        
+        let expectedResult = "[\"Hello\"]"
+        let errorMessage = incorrectFormattedLabelErrorMessage(sampleText: sampleText, expectedResult: expectedResult, actualResult: textViewContents)
+        
+        XCTAssertEqual(textViewContents, expectedResult, errorMessage)
     }
     
     // MARK: - Launch Performance test, to be reenabled as needed

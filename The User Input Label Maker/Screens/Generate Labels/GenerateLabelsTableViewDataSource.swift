@@ -34,6 +34,9 @@ class GenerateLabelsTableViewDataSource: NSObject, UniversalTableViewDataSource 
             cell.textView.text = "\(labelsBundle.formattedArray)"
             cell.textView.accessibilityUserInputLabels = ["Formatted Labels", "Labels"]
             
+            // Set automation identifier
+            cell.textView.accessibilityIdentifier = "Formatted Labels"
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: PlainTableViewCell.reuseIdentifier, for: indexPath) as! PlainTableViewCell

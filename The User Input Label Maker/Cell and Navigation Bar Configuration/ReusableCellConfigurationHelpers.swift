@@ -16,6 +16,9 @@ struct ReusableCellConfigurationHelpers {
         // Configure cell content
         cell.contentConfiguration = TableViewCellContentConfigurations.basicButtonCell(withText: textContent)
         
+        // Configure automation identifier
+        cell.accessibilityIdentifier = textContent
+        
         // Configure accessibility label
         cell.accessibilityLabel = textContent
         
