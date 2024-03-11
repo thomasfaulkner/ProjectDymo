@@ -140,7 +140,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         
         bundle.textField.tap()
         
-        let sampleText = "Hello, "
+        let sampleText = "Hello"
         bundle.textField.typeText(sampleText)
         
         let errorMessage = textFieldStorageErrorMessage(fieldName: bundle.fieldName, sampleText: sampleText, textFieldContents: bundle.textFieldContents)
