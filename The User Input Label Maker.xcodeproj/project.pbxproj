@@ -77,6 +77,7 @@
 		5ECEC87C2AAFBCA800535B42 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC87B2AAFBCA800535B42 /* TextFieldTableViewCell.swift */; };
 		5ECEC87E2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC87D2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift */; };
 		5ECEC8802AAFCC3000535B42 /* SFSymbolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEC87F2AAFCC3000535B42 /* SFSymbolKit.swift */; };
+		5EE968A32B9FBDE8001EE973 /* TextFieldInfoBundleForUITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE968A22B9FBDE8001EE973 /* TextFieldInfoBundleForUITesting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,7 @@
 		5ECEC87B2AAFBCA800535B42 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		5ECEC87D2AAFC79200535B42 /* NavigationBarConfigurationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurationHelpers.swift; sourceTree = "<group>"; };
 		5ECEC87F2AAFCC3000535B42 /* SFSymbolKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolKit.swift; sourceTree = "<group>"; };
+		5EE968A22B9FBDE8001EE973 /* TextFieldInfoBundleForUITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInfoBundleForUITesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +464,7 @@
 		5ECEC8402A9ADBDF00535B42 /* The User Input Label MakerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				5EE968A12B9FBDDA001EE973 /* Models */,
 				5ECEC8412A9ADBDF00535B42 /* The_User_Input_Label_MakerUITests.swift */,
 				5ECEC8432A9ADBDF00535B42 /* The_User_Input_Label_MakerUITestsLaunchTests.swift */,
 			);
@@ -540,6 +543,14 @@
 				5ECEC8792AAFBAD800535B42 /* HeaderFooterView.swift */,
 			);
 			path = "Header Footer Views";
+			sourceTree = "<group>";
+		};
+		5EE968A12B9FBDDA001EE973 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EE968A22B9FBDE8001EE973 /* TextFieldInfoBundleForUITesting.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -753,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECEC8442A9ADBDF00535B42 /* The_User_Input_Label_MakerUITestsLaunchTests.swift in Sources */,
+				5EE968A32B9FBDE8001EE973 /* TextFieldInfoBundleForUITesting.swift in Sources */,
 				5ECEC8422A9ADBDF00535B42 /* The_User_Input_Label_MakerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

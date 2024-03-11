@@ -128,25 +128,38 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         app.tables["Button or Segmented Control"].cells["Text"].tap()
     }
     
+    func textFieldStorageErrorMessage(fieldName: String, sampleText: String, textFieldContents: String) -> String {
+        return "Text entered in field \"\(fieldName)\" was not stored correctly.\n- Entered: \(sampleText)\n- Read from field: \(textFieldContents)"
+    }
+    
     // Core Tests
-    func test_CheckOutMoreAlbumsField_WhenGivenText_StoresText() throws {
+    func test_CheckOutMoreAlbumsField_WhenGivenText_StoresReadableText() throws {
         navigateToTextButtonTVC()
+
+        let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "Check Out More Albums")
         
-        let tableName = "Text"
-        let fieldName = "Check Out More Albums"
-        
-        let app = XCUIApplication()
-        // Get correct text field via the cell's automation identifier
-        let textField = app.tables[tableName].textFields[fieldName]
-        
-        textField.tap()
+        bundle.textField.tap()
         
         let sampleText = "Hello, "
-        textField.typeText(sampleText)
+        bundle.textField.typeText(sampleText)
         
-        let textFieldContents = textField.value as! String
+        let errorMessage = textFieldStorageErrorMessage(fieldName: bundle.fieldName, sampleText: sampleText, textFieldContents: bundle.textFieldContents)
         
-        XCTAssertEqual(textFieldContents, sampleText, "Text entered in Check Out More Albums field was not stored correctly.\n- Entered: \(sampleText)\n- Read from field: \(textFieldContents)")
+        XCTAssertEqual(bundle.textFieldContents, sampleText, errorMessage)
+    }
+    
+    func test_MoreAlbumsField_WhenGivenText_StoresReadableText() throws {
+        navigateToTextButtonTVC()
+        let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "More Albums")
+        
+        bundle.textField.tap()
+        
+        let sampleText = "world!"
+        bundle.textField.typeText(sampleText)
+        
+        let errorMessage = textFieldStorageErrorMessage(fieldName: bundle.fieldName, sampleText: sampleText, textFieldContents: bundle.textFieldContents)
+        
+        XCTAssertEqual(bundle.textFieldContents, sampleText, errorMessage)
     }
     
     // MARK: - Launch Performance test, to be reenabled as needed
