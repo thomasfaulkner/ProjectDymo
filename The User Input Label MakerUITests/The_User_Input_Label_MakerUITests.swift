@@ -134,7 +134,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     }
     
     func incorrectFormattedLabelErrorMessage(sampleText: String, expectedResult: String, actualResult: String) -> String {
-        return "Generate Labels did not produce the expected, correctly-formatted label.\n- Text passed in from text field: \(sampleText)\n- Expected label: \(expectedResult)\n- Actual result: \(actualResult)"
+        return "Generate Labels did not produce the expected, correctly-formatted label.\n- Text passed in from text field(s): \(sampleText)\n- Expected label: \(expectedResult)\n- Actual result: \(actualResult)"
     }
     
     // Core Tests
@@ -204,6 +204,35 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         
         let expectedResult = "[\"world!\"]"
         let errorMessage = incorrectFormattedLabelErrorMessage(sampleText: sampleText, expectedResult: expectedResult, actualResult: textViewContents)
+        
+        XCTAssertEqual(textViewContents, expectedResult, errorMessage)
+    }
+    
+    func test_TextInAllTextTVCFields_WhenPassedToGenerateLabels_ProducesAccurateUserInputLabel() throws {
+        navigateToTextButtonTVC()
+        
+        let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "Check Out More Albums", secondFieldName: "More Albums")
+        
+        // Type text in Check Out More Albums field
+        bundle.textField.tap()
+        
+        let firstSampleText = "Hello"
+        bundle.textField.typeText(firstSampleText)
+        
+        // Type text in More Albums field
+        bundle.secondTextField?.tap()
+        
+        let secondSampleText = "world!"
+        bundle.secondTextField?.typeText(secondSampleText)
+        
+        // Generate labels
+        bundle.app.tables[bundle.tableName].cells["Generate Labels"].tap()
+        
+        // Verify accuracy of label produced on Generate Labels screen
+        let textViewContents = bundle.app.tables["Generate Labels"].textViews["Formatted Labels"].value as! String
+        
+        let expectedResult = "[\"Hello\", \"world!\"]"
+        let errorMessage = incorrectFormattedLabelErrorMessage(sampleText: "\"Hello\", \"world!\"", expectedResult: expectedResult, actualResult: textViewContents)
         
         XCTAssertEqual(textViewContents, expectedResult, errorMessage)
     }
