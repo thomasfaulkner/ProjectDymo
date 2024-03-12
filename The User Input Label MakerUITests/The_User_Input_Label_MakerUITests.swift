@@ -188,6 +188,26 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         XCTAssertEqual(textViewContents, expectedResult, errorMessage)
     }
     
+    func test_TextInMoreAlbumsField_WhenPassedToGenerateLabels_ProducesAccurateUserInputLabel() throws {
+        navigateToTextButtonTVC()
+        
+        let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "More Albums")
+        
+        bundle.textField.tap()
+        
+        let sampleText = "world!"
+        bundle.textField.typeText(sampleText)
+        
+        bundle.app.tables[bundle.tableName].cells["Generate Labels"].tap()
+        
+        let textViewContents = bundle.app.tables["Generate Labels"].textViews["Formatted Labels"].value as! String
+        
+        let expectedResult = "[\"world!\"]"
+        let errorMessage = incorrectFormattedLabelErrorMessage(sampleText: sampleText, expectedResult: expectedResult, actualResult: textViewContents)
+        
+        XCTAssertEqual(textViewContents, expectedResult, errorMessage)
+    }
+    
     // MARK: - Launch Performance test, to be reenabled as needed
 //    func testLaunchPerformance() throws {
 //        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
