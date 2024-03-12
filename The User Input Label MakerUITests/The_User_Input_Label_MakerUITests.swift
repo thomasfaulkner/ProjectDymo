@@ -25,12 +25,18 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     // MARK: - Main TVC UI Tests
     
     func test_ButtonOrSegmentedControl_WhenTapped_LaunchesVC() throws {
+        // Given
+        /// Launch app
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
         
+        // When
+        /// Tap button
         app.tables["User Input Label Maker"].cells["Button or Segmented Control"].tap()
         
+        // Then
+        /// Verify that tapping the button caused the correct VC to be shown
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
@@ -38,12 +44,15 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     }
     
     func test_SliderSwitchOrStepper_WhenTapped_LaunchesVC() throws {
+        // Given
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
         
+        // When
         app.tables["User Input Label Maker"].cells["Slider, Switch, or Stepper"].tap()
         
+        // Then
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
@@ -51,12 +60,15 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     }
     
     func test_TextField_WhenTapped_LaunchesVC() throws {
+        // Given
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
         
+        // When
         app.tables["User Input Label Maker"].cells["Text Field"].tap()
         
+        // Then
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
@@ -64,12 +76,15 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     }
     
     func test_UserInputLabelTips_WhenTapped_LaunchesVC() throws {
+        // Given
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
         app.launch()
         
+        // When
         app.tables["User Input Label Maker"].cells["User Input Label Tips"].tap()
         
+        // Then
         let tableIndentifierAfterTap = app.tables.firstMatch.identifier
         let errorMessage = "AX Identifier for table view shown after tapping was \(tableIndentifierAfterTap)"
         
@@ -129,33 +144,44 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     }
     
     // Error Messages
+    /// Error message for when text was stored incorrectly in text field
     func textFieldStorageErrorMessage(fieldName: String, sampleText: String, textFieldContents: String) -> String {
         return "Text entered in field \"\(fieldName)\" was not stored correctly.\n- Entered: \(sampleText)\n- Read from field: \(textFieldContents)"
     }
     
+    /// Error message for when passing text to Generate Labels produces an unexpected or incorrect formatted label
     func incorrectFormattedLabelErrorMessage(sampleText: String, expectedResult: String, actualResult: String) -> String {
         return "Generate Labels did not produce the expected, correctly-formatted label.\n- Text passed in from text field(s): \(sampleText)\n- Expected label: \(expectedResult)\n- Actual result: \(actualResult)"
     }
     
     // Core Tests
     func test_CheckOutMoreAlbumsField_WhenGivenText_StoresReadableText() throws {
+        // Given
+        /// Navigate to TextButtonTVC
         navigateToTextButtonTVC()
 
+        // When
+        /// Tap on specified text field
         let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "Check Out More Albums")
         
         bundle.textField.tap()
         
+        /// Enter sample text into specified text field
         let sampleText = "Hello"
         bundle.textField.typeText(sampleText)
         
         let errorMessage = textFieldStorageErrorMessage(fieldName: bundle.fieldName, sampleText: sampleText, textFieldContents: bundle.textFieldContents)
         
+        // Then
+        /// Verify that the correct text is readable from the text field
         XCTAssertEqual(bundle.textFieldContents, sampleText, errorMessage)
     }
     
     func test_MoreAlbumsField_WhenGivenText_StoresReadableText() throws {
+        // Given
         navigateToTextButtonTVC()
         
+        // When
         let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "More Albums")
         
         bundle.textField.tap()
@@ -165,21 +191,30 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         
         let errorMessage = textFieldStorageErrorMessage(fieldName: bundle.fieldName, sampleText: sampleText, textFieldContents: bundle.textFieldContents)
         
+        // Then
         XCTAssertEqual(bundle.textFieldContents, sampleText, errorMessage)
     }
     
     func test_TextInCheckOutMoreAlbumsField_WhenPassedToGenerateLabels_ProducesAccurateUserInputLabel() throws {
+        // Given
+        /// Navigate to TextButtonTVC
         navigateToTextButtonTVC()
         
+        /// Tap on specified text field
         let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "Check Out More Albums")
         
         bundle.textField.tap()
         
+        /// Enter sample text into specified text field
         let sampleText = "Hello"
         bundle.textField.typeText(sampleText)
         
+        // When
+        /// Tap "Generate Labels" button cell to pass text from all text fields to GenerateLabelsTVC
         bundle.app.tables[bundle.tableName].cells["Generate Labels"].tap()
         
+        // Then
+        /// Verify that a correctly formatted array of labels was generated and is readable from the text view in GenerateLabelsTVC
         let textViewContents = bundle.app.tables["Generate Labels"].textViews["Formatted Labels"].value as! String
         
         let expectedResult = "[\"Hello\"]"
@@ -189,6 +224,7 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     }
     
     func test_TextInMoreAlbumsField_WhenPassedToGenerateLabels_ProducesAccurateUserInputLabel() throws {
+        // Given
         navigateToTextButtonTVC()
         
         let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "More Albums")
@@ -198,8 +234,10 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
         let sampleText = "world!"
         bundle.textField.typeText(sampleText)
         
+        // When
         bundle.app.tables[bundle.tableName].cells["Generate Labels"].tap()
         
+        // Then
         let textViewContents = bundle.app.tables["Generate Labels"].textViews["Formatted Labels"].value as! String
         
         let expectedResult = "[\"world!\"]"
@@ -209,26 +247,30 @@ final class The_User_Input_Label_MakerUITests: XCTestCase {
     }
     
     func test_TextInAllTextTVCFields_WhenPassedToGenerateLabels_ProducesAccurateUserInputLabel() throws {
+        // Given
+        /// Navigate to TextButtonTVC
         navigateToTextButtonTVC()
         
+        /// Type text in Check Out More Albums field
         let bundle = TextFieldInfoBundleForUITesting(tableName: "Text", fieldName: "Check Out More Albums", secondFieldName: "More Albums")
         
-        // Type text in Check Out More Albums field
         bundle.textField.tap()
         
         let firstSampleText = "Hello"
         bundle.textField.typeText(firstSampleText)
         
-        // Type text in More Albums field
+        /// Type text in More Albums field
         bundle.secondTextField?.tap()
         
         let secondSampleText = "world!"
         bundle.secondTextField?.typeText(secondSampleText)
         
-        // Generate labels
+        // When
+        /// Tap "Generate Labels" button cell to pass text from all text fields to GenerateLabelsTVC
         bundle.app.tables[bundle.tableName].cells["Generate Labels"].tap()
         
-        // Verify accuracy of label produced on Generate Labels screen
+        // Then
+        /// Verify that a correctly formatted array of labels was generated and is readable from the text view in GenerateLabelsTVC
         let textViewContents = bundle.app.tables["Generate Labels"].textViews["Formatted Labels"].value as! String
         
         let expectedResult = "[\"Hello\", \"world!\"]"
