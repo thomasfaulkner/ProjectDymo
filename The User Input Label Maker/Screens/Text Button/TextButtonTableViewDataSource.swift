@@ -34,6 +34,9 @@ class TextButtonTableViewDataSource: NSObject, UniversalTextEntryDataSource {
             cell.textField.placeholder = placeholderText
             cell.accessibilityUserInputLabels = ["\(placeholderText)"]
             
+            // Set automation identifier
+            cell.accessibilityIdentifier = placeholderText
+            
             cell.editingChangedAction = { [weak self] (thisCell) in
                 self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)
             }
@@ -42,9 +45,12 @@ class TextButtonTableViewDataSource: NSObject, UniversalTextEntryDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.reuseIdentifier, for: indexPath) as! TextFieldTableViewCell
             
-            let placeHolderText = "More Albums"
-            cell.textField.placeholder = placeHolderText
-            cell.accessibilityUserInputLabels = ["\(placeHolderText)"]
+            let placeholderText = "More Albums"
+            cell.textField.placeholder = placeholderText
+            cell.accessibilityUserInputLabels = ["\(placeholderText)"]
+            
+            // Set automation identifier
+            cell.accessibilityIdentifier = placeholderText
             
             cell.editingChangedAction = { [weak self] (thisCell) in
                 self?.textFieldContent[indexPath] = LabelStorageHelpers.textFromField(inCell: thisCell)

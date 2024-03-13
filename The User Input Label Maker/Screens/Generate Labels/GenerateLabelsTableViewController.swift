@@ -20,6 +20,9 @@ class GenerateLabelsTableViewController: UniversalTableViewController {
         tableView.dataSource = dataSource
         dataSource.labelsBundle = labelsBundle
         
+        // Configure automation identifier
+        tableView.accessibilityIdentifier = title
+        
         // Register cells and header/footer views
         CellRegistrationHelpers.registerCellsAndViews(forTableView: tableView, withCellViewTypes: [.plain, .multilineTextView, .headerFooterView])
     }
